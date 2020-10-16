@@ -11,7 +11,7 @@ I also love improving my exisiting knowledge :)
 Currently in NYP
 
 ### 🦾 Skillz
-[<img alt = "C++" width = "32" src = "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png"/>]()
+[<img alt = "C++" width = "32" src = "https://img.icons8.com/color/960/000000/c-plus-plus-logo.png"/>]()
 [<img alt = "OpenGL" width = "32" src = "https://cdn.worldvectorlogo.com/logos/opengl-1.svg"/>]()
 [<img alt = "HTML" width = "32" src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"/>]()
 [<img alt = "CSS" width = "32" src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"/>]()
