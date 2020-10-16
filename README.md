@@ -13,6 +13,6 @@ Currently in NYP
 ### 🦾 Skillz
 [<img alt = "C++" width = "50" src = "https://img.icons8.com/color/960/000000/c-plus-plus-logo.png"/>]()
 [<img alt = "OpenGL" width = "50" src = "https://cdn.worldvectorlogo.com/logos/opengl-1.svg"/>]()
-[<img alt = "HTML" width = "50" src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"/>]()
-[<img alt = "CSS" width = "50" src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"/>]()
+[<img alt = "HTML" width = "50" src = "https://img.icons8.com/material-two-tone/960/000000/html-filetype.png"/>]()
+[<img alt = "CSS" width = "50" src = "https://img.icons8.com/color/960/000000/html-5.png"/>]()
 [<img alt = "JS" width = "50" src = "https://cdn.imgbin.com/1/19/8/imgbin-javascript-logo-html-comment-blog-others-rYkexXzhunDcAfiR8EJUGRYh9.jpg"/>]()
