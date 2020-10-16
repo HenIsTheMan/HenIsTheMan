@@ -16,3 +16,7 @@ Currently in NYP
 [<img alt = "HTML" width = "50" src = "https://img.icons8.com/material-two-tone/960/000000/html-filetype.png"/>]()
 [<img alt = "CSS" width = "50" src = "https://img.icons8.com/material-two-tone/960/000000/css-filetype.png"/>]()
 [<img alt = "JS" width = "50" src = "https://img.icons8.com/color/960/000000/javascript.png"/>]()
+
+### 📊 Data
+![Stats](https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&hide=prs&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
