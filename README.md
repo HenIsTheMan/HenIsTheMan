@@ -18,5 +18,5 @@ Currently in NYP
 [<img alt = "JS" width = "50" src = "https://img.icons8.com/color/960/000000/javascript.png"/>]()
 
 ### 📊 Data
-![Stats](https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&count_private&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![Stats](https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&count_private=true&hide=prs,issues&show_icons=true&title_color=fff&icon_color=ff97&text_color=eff&bg_color=151515)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&layout=compact&title_color=fff&icon_color=ff97&text_color=eff&bg_color=151515)
