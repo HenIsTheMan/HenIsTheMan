@@ -1,16 +1,18 @@
-### Hi there 👋
+# 🧑 My name is Allen!
+## Nah it's actually Henry.
+### Or is it...
 
-<!--
-**HenIsTheMan/HenIsTheMan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 📄 Intro
+Hello World! I love all things coding, except for conventions 😝.
+I love learning new programming concepts that I do not know about.
+I also love improving my exisiting knowledge :)
 
-Here are some ideas to get you started:
+### 🏫 Education
+Currently in NYP
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🦾 Skillz
+[<img alt = "C++" width = "40px" src = "https://i.redd.it/31b2ii8hchi31.jpg">]
+[<img alt = "OpenGL" width = "40px" src = "https://cdn.worldvectorlogo.com/logos/opengl-1.svg">]
+[<img alt = "HTML" width = "40px" src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">]
+[<img alt = "CSS" width = "40px" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">]
+[<img alt = "JS" width = "40px" src = "https://cdn.imgbin.com/1/19/8/imgbin-javascript-logo-html-comment-blog-others-rYkexXzhunDcAfiR8EJUGRYh9.jpg">]
