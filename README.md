@@ -18,7 +18,7 @@ Currently in NYP
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 
-### 🦾 Currently Learning
+### 📚 Currently Learning
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
@@ -26,7 +26,7 @@ Currently in NYP
 
 ### 📊 Data
 <details>
-    <summary>Github</summary>
+    <summary>GitHub</summary>
     <br>
     <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
       <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&hide=prs&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
