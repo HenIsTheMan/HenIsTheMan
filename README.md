@@ -1,5 +1,7 @@
 # HenIsTheMan, isn't he?
 
+![](https://komarev.com/ghpvc/?username=HenIsTheMan)
+
 ### 📄 Intro
 Hello World!
 
