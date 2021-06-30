@@ -1,6 +1,6 @@
 # HenIsTheMan, isn't he?
 
-![](https://komarev.com/ghpvc/?username=HenIsTheMan)
+![ProfileViews](https://komarev.com/ghpvc/?username=HenIsTheMan)
 
 ### 📄 Intro
 Hello World!
@@ -29,8 +29,6 @@ Currently in NYP
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png"></code>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=HenIsTheMan)](https://github.com/ryo-ma/github-profile-trophy)
-
 ### 📊 Data
 <details>
     <summary>GitHub</summary>
@@ -42,3 +40,6 @@ Currently in NYP
       <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
     </a>
 </details>
+
+### 🏆 Trophies
+[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&row=1&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
