@@ -1,5 +1,7 @@
 # HenIsTheMan, isn't he?
 
+![ProfileViews](https://komarev.com/ghpvc/?username=HenIsTheMan)
+
 ### 📄 Intro
 Hello World!
 
@@ -38,3 +40,6 @@ Currently in NYP
       <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
     </a>
 </details>
+
+### 🏆 Trophies
+[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=4&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/ryo-ma/github-profile-trophy)
