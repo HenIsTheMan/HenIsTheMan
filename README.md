@@ -42,4 +42,4 @@ Currently in NYP
 </details>
 
 ### 🏆 Trophies
-[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&row=1&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&margin-w=4&row=1&col=0&no-bg=true&no-frame=false)](https://github.com/ryo-ma/github-profile-trophy)
