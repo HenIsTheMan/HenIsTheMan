@@ -34,13 +34,14 @@ Currently in NYP
 ### 📊 Data
 <details>
     <summary>GitHub</summary>
-    <br style="line-height:0px;" />
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-      <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </a>
-    <a href="https://github.com/HenIsTheMan/HenIsTheMan">
-      <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan's Most Used Langs&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </a>
+    <td style="padding-top: 4px;">
+        <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
+          <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
+        </a>
+        <a href="https://github.com/HenIsTheMan/HenIsTheMan">
+          <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan's Most Used Langs&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
+        </a>
+    </td>
 </details>
 
 ### 🏆 Trophies
