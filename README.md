@@ -1,7 +1,5 @@
 # HenIsTheMan, isn't he?
 
-![ProfileViews](https://komarev.com/ghpvc/?username=HenIsTheMan)
-
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 📄 Intro
@@ -34,14 +32,13 @@ Currently in NYP
 ### 📊 Data
 <details>
     <summary>GitHub</summary>
-    <td style="padding-top: 40px;">
-        <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-          <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-        </a>
-        <a href="https://github.com/HenIsTheMan/HenIsTheMan">
-          <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan's Most Used Langs&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-        </a>
-    </td>
+    <br>
+    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
+        <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
+    </a>
+    <a href="https://github.com/HenIsTheMan/HenIsTheMan">
+        <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan's Most Used Langs&layout=compact">
+    </a>
 </details>
 
 ### 🏆 Trophies
