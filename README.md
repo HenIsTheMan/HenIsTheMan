@@ -42,4 +42,4 @@ Currently in NYP
 </details>
 
 ### 🏆 Trophies
-[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=4&row=1&col=0&no-bg=false&no-frame=false)]()
+[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=4&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/HenIsTheMan/HenIsTheMan)
