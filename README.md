@@ -10,7 +10,7 @@ Hello World!
 ### 🏫 Education
 Currently in NYP
 
-### 🦾🦾🦾
+### 🦾🦾🦾🦾
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/gamemaker/gamemaker.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/lua/lua.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
@@ -22,7 +22,7 @@ Currently in NYP
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/unity/unity.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
 
-### 📚📚📚
+### 📚📚📚📚
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height = "50" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
@@ -34,7 +34,7 @@ Currently in NYP
 ### 📊 Data
 <details>
     <summary>GitHub</summary>
-    <td style="padding-top: 4px;">
+    <td style="padding-top: 40px;">
         <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
           <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
         </a>
