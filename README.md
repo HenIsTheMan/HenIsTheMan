@@ -1,60 +1,57 @@
 # HenIsTheMan, isn't he?
 
-### 📽📽 Past
-<p align = "center">
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GameMakerLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/HtmlLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/CssLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JsLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/VsCodeLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GitHubLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/LuaLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JavaLogoImg.jpg"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/AndroidStudioLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/SqlLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/MySqlLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/FirebaseLogoImg.png"></code>
-    </a>
-</p>
-
-### 🎁🎁 Present
-<p align = "center">
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/OpenGlLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CppLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CSharpLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/UnityLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/JsonLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/GitKrakenLogoImg.jpg"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/VsLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/SparkArLogoImg.png"></code>
-    </a>
-</p>
-
-### ❓❔ Future
-<p align = "center">
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VbaLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VulkanLogoImg.jpg"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/WebGlLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/CLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/PythonLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/TypeScriptLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/GitLogoImg.png"></code>
-        <code><img height = 40 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/NodeJsLogoImg.png"></code>
-    </a>
-</p>
+### 💻🖥️ Coding/Programming
+<details>
+    <summary>📽📽 Past</summary>
+    <p align = "center">
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GameMakerLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/HtmlLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/CssLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JsLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/VsCodeLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GitHubLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/LuaLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JavaLogoImg.jpg"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/AndroidStudioLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/SqlLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/MySqlLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/FirebaseLogoImg.png"></code>
+    </p>
+</details>
+<details>
+    <summary>🎁🎁 Present</summary>
+    <p align = "center">
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/OpenGlLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CppLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CSharpLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/UnityLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/JsonLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/GitKrakenLogoImg.jpg"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/VsLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/SparkArLogoImg.png"></code>
+    </p>
+</details>
+<details>
+    <summary>❓❔ Future</summary>
+    <p align = "center">
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VbaLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VulkanLogoImg.jpg"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/WebGlLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/CLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/PythonLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/TypeScriptLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/GitLogoImg.png"></code>
+        <code><img height = 45 src = "https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/NodeJsLogoImg.png"></code>
+    </p>
+</details>
 
 ### 📊📊 Data
-<details>
-    <summary>GitHub</summary>
-    <br>
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-        <img style="height: auto; width: 54%;" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-        <img style="height: auto; width: 45%;" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan%27s%20Most%20Used%20Langs&layout=compact&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </a>
-</details>
+<a href = "https://github.com/HenIsTheMan/HenIsTheMan">
+    <img style="height: auto; width: 54%;" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
+</a>
+<a href = "https://github.com/HenIsTheMan/HenIsTheMan">
+    <img style="height: auto; width: 45%;" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan%27s%20Most%20Used%20Langs&layout=compact&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
+</a>
 
 ✨ Featured ✨ | 🏆 Trophies 🏆
 :-:|:-:
