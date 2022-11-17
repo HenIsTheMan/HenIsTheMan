@@ -1,5 +1,9 @@
 # HenIsTheMan, isn't he?
 
+<div align="center">
+    <a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width="800" height="400" src="Imgs/Intro.svg"></a>
+</div>
+
 ### 💻🖥️ Coding/Programming
 <details>
     <summary>📽📽 Past</summary>
