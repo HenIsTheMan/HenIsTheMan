@@ -8,7 +8,7 @@
 			<style>
                 @keyframes myScaling {
                     0% {
-                        transform: scale(0);
+                        transform: scale(0.45);
                     }
                     100% {
                         transform: scale(0.95);
@@ -92,6 +92,18 @@
                         clip: rect(93px, 9999px, 84px, 0);
                     }
                 }
+                
+                .outerContainer {
+                    background: linear-gradient(
+                        to bottom,
+                        #000,
+                        #000 50%,
+                        #222 50%,
+                        #222
+                    );
+
+                    animation: myBgSizeAnim 200ms ease infinite;
+                }
 
                 .innerContainer {
                     font-family:
@@ -100,24 +112,17 @@
                         Arial;
                 
                     color: white;
-                    background: linear-gradient(
-                        to bottom,
-                        #000,
-                        #000 50%,
-                        #222 50%,
-                        #222
-                    );
+                    background: none;
                     position: relative;
 
-                    font-size: 100px;
+                    font-size: 100px; <!-- Can change freely -->
                     letter-spacing: 5px; <!-- Can change freely -->
-                    //animation: myScaling 1.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-   
+
                     text-align: center;
                     width: 100%;
                     height: 400px;
                     
-                    animation: myBgSizeAnim 200ms ease infinite;
+                    animation: myScaling 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
                 }
                 
                 .innerContainer:before, .innerContainer:after {
