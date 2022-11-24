@@ -134,13 +134,13 @@
                 .container:before {
                     left: -2px;
                     text-shadow: 2px 0 rgba(253, 62, 62, 0.9);
-                    animation: myGlitchNoise 2700ms infinite linear alternate-reverse; //??
+                    animation: myGlitchNoise 2700ms infinite steps(14, end) alternate-reverse;
                 }
 
                 .container:after {
                     left: 2px;
                     text-shadow: -2px 0 rgba(77, 232, 244, 0.9);
-                    animation: myGlitchNoise 2200ms infinite linear alternate-reverse; //??
+                    animation: myGlitchNoise 2200ms infinite steps(17, jump-both);
                 }
             </style>
 		</div>
