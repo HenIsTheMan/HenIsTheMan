@@ -115,9 +115,8 @@
                     vertical-align: middle;
                 
                     font-family:
-                        Tahoma,
                         "Trebuchet MS",
-                        Arial;
+                        "Courier New";
                 
                     color: white;
                     background: none;
