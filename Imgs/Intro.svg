@@ -11,10 +11,11 @@
                 .outerContainer {
                     background: linear-gradient(
                         to bottom,
-                        #000,
-                        #000 50%,
-                        #222 50%,
-                        #222
+                        black,
+                        black 60%,
+                        #333 60%,
+                        #333 90%,
+                        rgba(114, 114, 114, 1)
                     );
                     
                     display: flex;
@@ -23,8 +24,8 @@
 
                     width: 100%;
                     height: 400px;
-                    
-                    animation: myBgSizeAnim 200ms ease infinite;
+
+                    animation: myBgSizeAnim 250ms ease infinite;
                 }
 
                 .blueInnerContainer, .whiteInnerContainer, .redInnerContainer {
@@ -66,13 +67,22 @@
 
                 @keyframes myBgSizeAnim {
                     0% {
-                        background-size: 100% 4px
+                        background-size: auto 4px;
                     }
-                    50% {
-                        background-size: 100% 2px
+                    20% {
+                        background-size: auto 2px;
+                    }
+                    40% {
+                        background-size: auto 5px;
+                    }
+                    60% {
+                        background-size: auto 2px;
+                    }
+                    80% {
+                        background-size: auto 3px;
                     }
                     100% {
-                        background-size: 100% 4px
+                        background-size: auto 4px;
                     }
                 }
             </style>
