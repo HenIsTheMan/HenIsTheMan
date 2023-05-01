@@ -24,12 +24,14 @@
                 }
                 
                 .outerContainer {
-                    background: conic-gradient(
-                        rgba(0, 0, 0, 0.4) 45deg,
-                        rgba(150, 150, 150, 0.4) 90deg,
-                        rgba(0, 0, 0, 0.4) 210deg
+                    background: repeating-conic-gradient(
+                        from 40deg at 40% 15.5%,
+                        rgba(0, 0, 0, 0.45) 0deg 20deg,
+                        rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                        rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                        rgba(77, 232, 244, 0.1) 40deg 44.5deg
                     );
-                    
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
