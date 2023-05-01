@@ -22,22 +22,16 @@
                     
                     animation: myBgSizeAnim 250ms ease infinite;
                 }
-                
-                .outerContainer {
-                    background: repeating-conic-gradient(
-                        from 40deg at 40% 15.5%,
-                        rgba(0, 0, 0, 0.45) 0deg 20deg,
-                        rgba(253, 62, 62, 0.1) 20deg 24.5deg,
-                        rgba(225, 225, 225, 0.25) 24.5deg 40deg,
-                        rgba(77, 232, 244, 0.1) 40deg 44.5deg
-                    );
 
+                .outerContainer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
                     width: 100%;
                     height: 400px;
+                    
+                    animation: myRotationAnim 7.5s linear infinite reverse;
                 }
 
                 .blueInnerContainer, .whiteInnerContainer, .redInnerContainer {
@@ -76,7 +70,7 @@
                         transform: scale(1);
                     }
                 }
-
+                
                 @keyframes myBgSizeAnim {
                     0% {
                         background-size: auto 4px;
@@ -95,6 +89,3264 @@
                     }
                     100% {
                         background-size: auto 4px;
+                    }
+                }
+                
+                <!--@keyframes myRotationAnim {
+                    $steps: 359;
+                    @for $i from 0 through $steps {
+                        #{round(percentage($i * (1 / $steps)) * 100) / 100} {
+                            background: repeating-conic-gradient(
+                                from $i + deg at 40% 15.5%,
+                                rgba(0, 0, 0, 0.45) 0deg 20deg,
+                                rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                                rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                                rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                            );
+                        }
+                    }
+                }-->
+                
+                @keyframes myRotationAnim {
+                    0% {
+                        background: repeating-conic-gradient(
+                            from 0deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    0.28% {
+                        background: repeating-conic-gradient(
+                            from 1deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    0.56% {
+                        background: repeating-conic-gradient(
+                            from 2deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    0.84% {
+                        background: repeating-conic-gradient(
+                            from 3deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    1.11% {
+                        background: repeating-conic-gradient(
+                            from 4deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    1.39% {
+                        background: repeating-conic-gradient(
+                            from 5deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    1.67% {
+                        background: repeating-conic-gradient(
+                            from 6deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    1.95% {
+                        background: repeating-conic-gradient(
+                            from 7deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    2.23% {
+                        background: repeating-conic-gradient(
+                            from 8deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    2.51% {
+                        background: repeating-conic-gradient(
+                            from 9deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    2.79% {
+                        background: repeating-conic-gradient(
+                            from 10deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    3.06% {
+                        background: repeating-conic-gradient(
+                            from 11deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    3.34% {
+                        background: repeating-conic-gradient(
+                            from 12deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    3.62% {
+                        background: repeating-conic-gradient(
+                            from 13deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    3.9% {
+                        background: repeating-conic-gradient(
+                            from 14deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    4.18% {
+                        background: repeating-conic-gradient(
+                            from 15deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    4.46% {
+                        background: repeating-conic-gradient(
+                            from 16deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    4.74% {
+                        background: repeating-conic-gradient(
+                            from 17deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    5.01% {
+                        background: repeating-conic-gradient(
+                            from 18deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    5.29% {
+                        background: repeating-conic-gradient(
+                            from 19deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    5.57% {
+                        background: repeating-conic-gradient(
+                            from 20deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    5.85% {
+                        background: repeating-conic-gradient(
+                            from 21deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    6.13% {
+                        background: repeating-conic-gradient(
+                            from 22deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    6.41% {
+                        background: repeating-conic-gradient(
+                            from 23deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    6.69% {
+                        background: repeating-conic-gradient(
+                            from 24deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    6.96% {
+                        background: repeating-conic-gradient(
+                            from 25deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    7.24% {
+                        background: repeating-conic-gradient(
+                            from 26deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    7.52% {
+                        background: repeating-conic-gradient(
+                            from 27deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    7.8% {
+                        background: repeating-conic-gradient(
+                            from 28deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    8.08% {
+                        background: repeating-conic-gradient(
+                            from 29deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    8.36% {
+                        background: repeating-conic-gradient(
+                            from 30deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    8.64% {
+                        background: repeating-conic-gradient(
+                            from 31deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    8.91% {
+                        background: repeating-conic-gradient(
+                            from 32deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    9.19% {
+                        background: repeating-conic-gradient(
+                            from 33deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    9.47% {
+                        background: repeating-conic-gradient(
+                            from 34deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    9.75% {
+                        background: repeating-conic-gradient(
+                            from 35deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    10.03% {
+                        background: repeating-conic-gradient(
+                            from 36deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    10.31% {
+                        background: repeating-conic-gradient(
+                            from 37deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    10.58% {
+                        background: repeating-conic-gradient(
+                            from 38deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    10.86% {
+                        background: repeating-conic-gradient(
+                            from 39deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    11.14% {
+                        background: repeating-conic-gradient(
+                            from 40deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    11.42% {
+                        background: repeating-conic-gradient(
+                            from 41deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    11.7% {
+                        background: repeating-conic-gradient(
+                            from 42deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    11.98% {
+                        background: repeating-conic-gradient(
+                            from 43deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    12.26% {
+                        background: repeating-conic-gradient(
+                            from 44deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    12.53% {
+                        background: repeating-conic-gradient(
+                            from 45deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    12.81% {
+                        background: repeating-conic-gradient(
+                            from 46deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    13.09% {
+                        background: repeating-conic-gradient(
+                            from 47deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    13.37% {
+                        background: repeating-conic-gradient(
+                            from 48deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    13.65% {
+                        background: repeating-conic-gradient(
+                            from 49deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    13.93% {
+                        background: repeating-conic-gradient(
+                            from 50deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    14.21% {
+                        background: repeating-conic-gradient(
+                            from 51deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    14.48% {
+                        background: repeating-conic-gradient(
+                            from 52deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    14.76% {
+                        background: repeating-conic-gradient(
+                            from 53deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    15.04% {
+                        background: repeating-conic-gradient(
+                            from 54deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    15.32% {
+                        background: repeating-conic-gradient(
+                            from 55deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    15.6% {
+                        background: repeating-conic-gradient(
+                            from 56deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    15.88% {
+                        background: repeating-conic-gradient(
+                            from 57deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    16.16% {
+                        background: repeating-conic-gradient(
+                            from 58deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    16.43% {
+                        background: repeating-conic-gradient(
+                            from 59deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    16.71% {
+                        background: repeating-conic-gradient(
+                            from 60deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    16.99% {
+                        background: repeating-conic-gradient(
+                            from 61deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    17.27% {
+                        background: repeating-conic-gradient(
+                            from 62deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    17.55% {
+                        background: repeating-conic-gradient(
+                            from 63deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    17.83% {
+                        background: repeating-conic-gradient(
+                            from 64deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    18.11% {
+                        background: repeating-conic-gradient(
+                            from 65deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    18.38% {
+                        background: repeating-conic-gradient(
+                            from 66deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    18.66% {
+                        background: repeating-conic-gradient(
+                            from 67deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    18.94% {
+                        background: repeating-conic-gradient(
+                            from 68deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    19.22% {
+                        background: repeating-conic-gradient(
+                            from 69deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    19.5% {
+                        background: repeating-conic-gradient(
+                            from 70deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    19.78% {
+                        background: repeating-conic-gradient(
+                            from 71deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    20.06% {
+                        background: repeating-conic-gradient(
+                            from 72deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    20.33% {
+                        background: repeating-conic-gradient(
+                            from 73deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    20.61% {
+                        background: repeating-conic-gradient(
+                            from 74deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    20.89% {
+                        background: repeating-conic-gradient(
+                            from 75deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    21.17% {
+                        background: repeating-conic-gradient(
+                            from 76deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    21.45% {
+                        background: repeating-conic-gradient(
+                            from 77deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    21.73% {
+                        background: repeating-conic-gradient(
+                            from 78deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    22.01% {
+                        background: repeating-conic-gradient(
+                            from 79deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    22.28% {
+                        background: repeating-conic-gradient(
+                            from 80deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    22.56% {
+                        background: repeating-conic-gradient(
+                            from 81deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    22.84% {
+                        background: repeating-conic-gradient(
+                            from 82deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    23.12% {
+                        background: repeating-conic-gradient(
+                            from 83deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    23.4% {
+                        background: repeating-conic-gradient(
+                            from 84deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    23.68% {
+                        background: repeating-conic-gradient(
+                            from 85deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    23.96% {
+                        background: repeating-conic-gradient(
+                            from 86deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    24.23% {
+                        background: repeating-conic-gradient(
+                            from 87deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    24.51% {
+                        background: repeating-conic-gradient(
+                            from 88deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    24.79% {
+                        background: repeating-conic-gradient(
+                            from 89deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    25.07% {
+                        background: repeating-conic-gradient(
+                            from 90deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    25.35% {
+                        background: repeating-conic-gradient(
+                            from 91deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    25.63% {
+                        background: repeating-conic-gradient(
+                            from 92deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    25.91% {
+                        background: repeating-conic-gradient(
+                            from 93deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    26.18% {
+                        background: repeating-conic-gradient(
+                            from 94deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    26.46% {
+                        background: repeating-conic-gradient(
+                            from 95deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    26.74% {
+                        background: repeating-conic-gradient(
+                            from 96deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    27.02% {
+                        background: repeating-conic-gradient(
+                            from 97deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    27.3% {
+                        background: repeating-conic-gradient(
+                            from 98deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    27.58% {
+                        background: repeating-conic-gradient(
+                            from 99deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    27.86% {
+                        background: repeating-conic-gradient(
+                            from 100deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    28.13% {
+                        background: repeating-conic-gradient(
+                            from 101deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    28.41% {
+                        background: repeating-conic-gradient(
+                            from 102deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    28.69% {
+                        background: repeating-conic-gradient(
+                            from 103deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    28.97% {
+                        background: repeating-conic-gradient(
+                            from 104deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    29.25% {
+                        background: repeating-conic-gradient(
+                            from 105deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    29.53% {
+                        background: repeating-conic-gradient(
+                            from 106deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    29.81% {
+                        background: repeating-conic-gradient(
+                            from 107deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    30.08% {
+                        background: repeating-conic-gradient(
+                            from 108deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    30.36% {
+                        background: repeating-conic-gradient(
+                            from 109deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    30.64% {
+                        background: repeating-conic-gradient(
+                            from 110deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    30.92% {
+                        background: repeating-conic-gradient(
+                            from 111deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    31.2% {
+                        background: repeating-conic-gradient(
+                            from 112deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    31.48% {
+                        background: repeating-conic-gradient(
+                            from 113deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    31.75% {
+                        background: repeating-conic-gradient(
+                            from 114deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    32.03% {
+                        background: repeating-conic-gradient(
+                            from 115deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    32.31% {
+                        background: repeating-conic-gradient(
+                            from 116deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    32.59% {
+                        background: repeating-conic-gradient(
+                            from 117deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    32.87% {
+                        background: repeating-conic-gradient(
+                            from 118deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    33.15% {
+                        background: repeating-conic-gradient(
+                            from 119deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    33.43% {
+                        background: repeating-conic-gradient(
+                            from 120deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    33.7% {
+                        background: repeating-conic-gradient(
+                            from 121deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    33.98% {
+                        background: repeating-conic-gradient(
+                            from 122deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    34.26% {
+                        background: repeating-conic-gradient(
+                            from 123deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    34.54% {
+                        background: repeating-conic-gradient(
+                            from 124deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    34.82% {
+                        background: repeating-conic-gradient(
+                            from 125deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    35.1% {
+                        background: repeating-conic-gradient(
+                            from 126deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    35.38% {
+                        background: repeating-conic-gradient(
+                            from 127deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    35.65% {
+                        background: repeating-conic-gradient(
+                            from 128deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    35.93% {
+                        background: repeating-conic-gradient(
+                            from 129deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    36.21% {
+                        background: repeating-conic-gradient(
+                            from 130deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    36.49% {
+                        background: repeating-conic-gradient(
+                            from 131deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    36.77% {
+                        background: repeating-conic-gradient(
+                            from 132deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    37.05% {
+                        background: repeating-conic-gradient(
+                            from 133deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    37.33% {
+                        background: repeating-conic-gradient(
+                            from 134deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    37.6% {
+                        background: repeating-conic-gradient(
+                            from 135deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    37.88% {
+                        background: repeating-conic-gradient(
+                            from 136deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    38.16% {
+                        background: repeating-conic-gradient(
+                            from 137deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    38.44% {
+                        background: repeating-conic-gradient(
+                            from 138deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    38.72% {
+                        background: repeating-conic-gradient(
+                            from 139deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    39% {
+                        background: repeating-conic-gradient(
+                            from 140deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    39.28% {
+                        background: repeating-conic-gradient(
+                            from 141deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    39.55% {
+                        background: repeating-conic-gradient(
+                            from 142deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    39.83% {
+                        background: repeating-conic-gradient(
+                            from 143deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    40.11% {
+                        background: repeating-conic-gradient(
+                            from 144deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    40.39% {
+                        background: repeating-conic-gradient(
+                            from 145deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    40.67% {
+                        background: repeating-conic-gradient(
+                            from 146deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    40.95% {
+                        background: repeating-conic-gradient(
+                            from 147deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    41.23% {
+                        background: repeating-conic-gradient(
+                            from 148deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    41.5% {
+                        background: repeating-conic-gradient(
+                            from 149deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    41.78% {
+                        background: repeating-conic-gradient(
+                            from 150deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    42.06% {
+                        background: repeating-conic-gradient(
+                            from 151deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    42.34% {
+                        background: repeating-conic-gradient(
+                            from 152deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    42.62% {
+                        background: repeating-conic-gradient(
+                            from 153deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    42.9% {
+                        background: repeating-conic-gradient(
+                            from 154deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    43.18% {
+                        background: repeating-conic-gradient(
+                            from 155deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    43.45% {
+                        background: repeating-conic-gradient(
+                            from 156deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    43.73% {
+                        background: repeating-conic-gradient(
+                            from 157deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    44.01% {
+                        background: repeating-conic-gradient(
+                            from 158deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    44.29% {
+                        background: repeating-conic-gradient(
+                            from 159deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    44.57% {
+                        background: repeating-conic-gradient(
+                            from 160deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    44.85% {
+                        background: repeating-conic-gradient(
+                            from 161deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    45.13% {
+                        background: repeating-conic-gradient(
+                            from 162deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    45.4% {
+                        background: repeating-conic-gradient(
+                            from 163deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    45.68% {
+                        background: repeating-conic-gradient(
+                            from 164deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    45.96% {
+                        background: repeating-conic-gradient(
+                            from 165deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    46.24% {
+                        background: repeating-conic-gradient(
+                            from 166deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    46.52% {
+                        background: repeating-conic-gradient(
+                            from 167deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    46.8% {
+                        background: repeating-conic-gradient(
+                            from 168deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    47.08% {
+                        background: repeating-conic-gradient(
+                            from 169deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    47.35% {
+                        background: repeating-conic-gradient(
+                            from 170deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    47.63% {
+                        background: repeating-conic-gradient(
+                            from 171deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    47.91% {
+                        background: repeating-conic-gradient(
+                            from 172deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    48.19% {
+                        background: repeating-conic-gradient(
+                            from 173deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    48.47% {
+                        background: repeating-conic-gradient(
+                            from 174deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    48.75% {
+                        background: repeating-conic-gradient(
+                            from 175deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    49.03% {
+                        background: repeating-conic-gradient(
+                            from 176deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    49.3% {
+                        background: repeating-conic-gradient(
+                            from 177deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    49.58% {
+                        background: repeating-conic-gradient(
+                            from 178deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    49.86% {
+                        background: repeating-conic-gradient(
+                            from 179deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    50.14% {
+                        background: repeating-conic-gradient(
+                            from 180deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    50.42% {
+                        background: repeating-conic-gradient(
+                            from 181deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    50.7% {
+                        background: repeating-conic-gradient(
+                            from 182deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    50.97% {
+                        background: repeating-conic-gradient(
+                            from 183deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    51.25% {
+                        background: repeating-conic-gradient(
+                            from 184deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    51.53% {
+                        background: repeating-conic-gradient(
+                            from 185deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    51.81% {
+                        background: repeating-conic-gradient(
+                            from 186deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    52.09% {
+                        background: repeating-conic-gradient(
+                            from 187deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    52.37% {
+                        background: repeating-conic-gradient(
+                            from 188deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    52.65% {
+                        background: repeating-conic-gradient(
+                            from 189deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    52.92% {
+                        background: repeating-conic-gradient(
+                            from 190deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    53.2% {
+                        background: repeating-conic-gradient(
+                            from 191deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    53.48% {
+                        background: repeating-conic-gradient(
+                            from 192deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    53.76% {
+                        background: repeating-conic-gradient(
+                            from 193deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    54.04% {
+                        background: repeating-conic-gradient(
+                            from 194deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    54.32% {
+                        background: repeating-conic-gradient(
+                            from 195deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    54.6% {
+                        background: repeating-conic-gradient(
+                            from 196deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    54.87% {
+                        background: repeating-conic-gradient(
+                            from 197deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    55.15% {
+                        background: repeating-conic-gradient(
+                            from 198deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    55.43% {
+                        background: repeating-conic-gradient(
+                            from 199deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    55.71% {
+                        background: repeating-conic-gradient(
+                            from 200deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    55.99% {
+                        background: repeating-conic-gradient(
+                            from 201deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    56.27% {
+                        background: repeating-conic-gradient(
+                            from 202deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    56.55% {
+                        background: repeating-conic-gradient(
+                            from 203deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    56.82% {
+                        background: repeating-conic-gradient(
+                            from 204deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    57.1% {
+                        background: repeating-conic-gradient(
+                            from 205deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    57.38% {
+                        background: repeating-conic-gradient(
+                            from 206deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    57.66% {
+                        background: repeating-conic-gradient(
+                            from 207deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    57.94% {
+                        background: repeating-conic-gradient(
+                            from 208deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    58.22% {
+                        background: repeating-conic-gradient(
+                            from 209deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    58.5% {
+                        background: repeating-conic-gradient(
+                            from 210deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    58.77% {
+                        background: repeating-conic-gradient(
+                            from 211deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    59.05% {
+                        background: repeating-conic-gradient(
+                            from 212deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    59.33% {
+                        background: repeating-conic-gradient(
+                            from 213deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    59.61% {
+                        background: repeating-conic-gradient(
+                            from 214deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    59.89% {
+                        background: repeating-conic-gradient(
+                            from 215deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    60.17% {
+                        background: repeating-conic-gradient(
+                            from 216deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    60.45% {
+                        background: repeating-conic-gradient(
+                            from 217deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    60.72% {
+                        background: repeating-conic-gradient(
+                            from 218deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    61% {
+                        background: repeating-conic-gradient(
+                            from 219deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    61.28% {
+                        background: repeating-conic-gradient(
+                            from 220deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    61.56% {
+                        background: repeating-conic-gradient(
+                            from 221deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    61.84% {
+                        background: repeating-conic-gradient(
+                            from 222deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    62.12% {
+                        background: repeating-conic-gradient(
+                            from 223deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    62.4% {
+                        background: repeating-conic-gradient(
+                            from 224deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    62.67% {
+                        background: repeating-conic-gradient(
+                            from 225deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    62.95% {
+                        background: repeating-conic-gradient(
+                            from 226deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    63.23% {
+                        background: repeating-conic-gradient(
+                            from 227deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    63.51% {
+                        background: repeating-conic-gradient(
+                            from 228deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    63.79% {
+                        background: repeating-conic-gradient(
+                            from 229deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    64.07% {
+                        background: repeating-conic-gradient(
+                            from 230deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    64.35% {
+                        background: repeating-conic-gradient(
+                            from 231deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    64.62% {
+                        background: repeating-conic-gradient(
+                            from 232deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    64.9% {
+                        background: repeating-conic-gradient(
+                            from 233deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    65.18% {
+                        background: repeating-conic-gradient(
+                            from 234deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    65.46% {
+                        background: repeating-conic-gradient(
+                            from 235deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    65.74% {
+                        background: repeating-conic-gradient(
+                            from 236deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    66.02% {
+                        background: repeating-conic-gradient(
+                            from 237deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    66.3% {
+                        background: repeating-conic-gradient(
+                            from 238deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    66.57% {
+                        background: repeating-conic-gradient(
+                            from 239deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    66.85% {
+                        background: repeating-conic-gradient(
+                            from 240deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    67.13% {
+                        background: repeating-conic-gradient(
+                            from 241deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    67.41% {
+                        background: repeating-conic-gradient(
+                            from 242deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    67.69% {
+                        background: repeating-conic-gradient(
+                            from 243deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    67.97% {
+                        background: repeating-conic-gradient(
+                            from 244deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    68.25% {
+                        background: repeating-conic-gradient(
+                            from 245deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    68.52% {
+                        background: repeating-conic-gradient(
+                            from 246deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    68.8% {
+                        background: repeating-conic-gradient(
+                            from 247deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    69.08% {
+                        background: repeating-conic-gradient(
+                            from 248deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    69.36% {
+                        background: repeating-conic-gradient(
+                            from 249deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    69.64% {
+                        background: repeating-conic-gradient(
+                            from 250deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    69.92% {
+                        background: repeating-conic-gradient(
+                            from 251deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    70.19% {
+                        background: repeating-conic-gradient(
+                            from 252deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    70.47% {
+                        background: repeating-conic-gradient(
+                            from 253deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    70.75% {
+                        background: repeating-conic-gradient(
+                            from 254deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    71.03% {
+                        background: repeating-conic-gradient(
+                            from 255deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    71.31% {
+                        background: repeating-conic-gradient(
+                            from 256deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    71.59% {
+                        background: repeating-conic-gradient(
+                            from 257deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    71.87% {
+                        background: repeating-conic-gradient(
+                            from 258deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    72.14% {
+                        background: repeating-conic-gradient(
+                            from 259deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    72.42% {
+                        background: repeating-conic-gradient(
+                            from 260deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    72.7% {
+                        background: repeating-conic-gradient(
+                            from 261deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    72.98% {
+                        background: repeating-conic-gradient(
+                            from 262deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    73.26% {
+                        background: repeating-conic-gradient(
+                            from 263deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    73.54% {
+                        background: repeating-conic-gradient(
+                            from 264deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    73.82% {
+                        background: repeating-conic-gradient(
+                            from 265deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    74.09% {
+                        background: repeating-conic-gradient(
+                            from 266deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    74.37% {
+                        background: repeating-conic-gradient(
+                            from 267deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    74.65% {
+                        background: repeating-conic-gradient(
+                            from 268deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    74.93% {
+                        background: repeating-conic-gradient(
+                            from 269deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    75.21% {
+                        background: repeating-conic-gradient(
+                            from 270deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    75.49% {
+                        background: repeating-conic-gradient(
+                            from 271deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    75.77% {
+                        background: repeating-conic-gradient(
+                            from 272deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    76.04% {
+                        background: repeating-conic-gradient(
+                            from 273deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    76.32% {
+                        background: repeating-conic-gradient(
+                            from 274deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    76.6% {
+                        background: repeating-conic-gradient(
+                            from 275deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    76.88% {
+                        background: repeating-conic-gradient(
+                            from 276deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    77.16% {
+                        background: repeating-conic-gradient(
+                            from 277deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    77.44% {
+                        background: repeating-conic-gradient(
+                            from 278deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    77.72% {
+                        background: repeating-conic-gradient(
+                            from 279deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    77.99% {
+                        background: repeating-conic-gradient(
+                            from 280deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    78.27% {
+                        background: repeating-conic-gradient(
+                            from 281deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    78.55% {
+                        background: repeating-conic-gradient(
+                            from 282deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    78.83% {
+                        background: repeating-conic-gradient(
+                            from 283deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    79.11% {
+                        background: repeating-conic-gradient(
+                            from 284deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    79.39% {
+                        background: repeating-conic-gradient(
+                            from 285deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    79.67% {
+                        background: repeating-conic-gradient(
+                            from 286deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    79.94% {
+                        background: repeating-conic-gradient(
+                            from 287deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    80.22% {
+                        background: repeating-conic-gradient(
+                            from 288deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    80.5% {
+                        background: repeating-conic-gradient(
+                            from 289deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    80.78% {
+                        background: repeating-conic-gradient(
+                            from 290deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    81.06% {
+                        background: repeating-conic-gradient(
+                            from 291deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    81.34% {
+                        background: repeating-conic-gradient(
+                            from 292deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    81.62% {
+                        background: repeating-conic-gradient(
+                            from 293deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    81.89% {
+                        background: repeating-conic-gradient(
+                            from 294deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    82.17% {
+                        background: repeating-conic-gradient(
+                            from 295deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    82.45% {
+                        background: repeating-conic-gradient(
+                            from 296deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    82.73% {
+                        background: repeating-conic-gradient(
+                            from 297deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    83.01% {
+                        background: repeating-conic-gradient(
+                            from 298deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    83.29% {
+                        background: repeating-conic-gradient(
+                            from 299deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    83.57% {
+                        background: repeating-conic-gradient(
+                            from 300deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    83.84% {
+                        background: repeating-conic-gradient(
+                            from 301deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    84.12% {
+                        background: repeating-conic-gradient(
+                            from 302deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    84.4% {
+                        background: repeating-conic-gradient(
+                            from 303deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    84.68% {
+                        background: repeating-conic-gradient(
+                            from 304deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    84.96% {
+                        background: repeating-conic-gradient(
+                            from 305deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    85.24% {
+                        background: repeating-conic-gradient(
+                            from 306deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    85.52% {
+                        background: repeating-conic-gradient(
+                            from 307deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    85.79% {
+                        background: repeating-conic-gradient(
+                            from 308deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    86.07% {
+                        background: repeating-conic-gradient(
+                            from 309deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    86.35% {
+                        background: repeating-conic-gradient(
+                            from 310deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    86.63% {
+                        background: repeating-conic-gradient(
+                            from 311deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    86.91% {
+                        background: repeating-conic-gradient(
+                            from 312deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    87.19% {
+                        background: repeating-conic-gradient(
+                            from 313deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    87.47% {
+                        background: repeating-conic-gradient(
+                            from 314deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    87.74% {
+                        background: repeating-conic-gradient(
+                            from 315deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    88.02% {
+                        background: repeating-conic-gradient(
+                            from 316deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    88.3% {
+                        background: repeating-conic-gradient(
+                            from 317deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    88.58% {
+                        background: repeating-conic-gradient(
+                            from 318deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    88.86% {
+                        background: repeating-conic-gradient(
+                            from 319deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    89.14% {
+                        background: repeating-conic-gradient(
+                            from 320deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    89.42% {
+                        background: repeating-conic-gradient(
+                            from 321deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    89.69% {
+                        background: repeating-conic-gradient(
+                            from 322deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    89.97% {
+                        background: repeating-conic-gradient(
+                            from 323deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    90.25% {
+                        background: repeating-conic-gradient(
+                            from 324deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    90.53% {
+                        background: repeating-conic-gradient(
+                            from 325deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    90.81% {
+                        background: repeating-conic-gradient(
+                            from 326deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    91.09% {
+                        background: repeating-conic-gradient(
+                            from 327deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    91.36% {
+                        background: repeating-conic-gradient(
+                            from 328deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    91.64% {
+                        background: repeating-conic-gradient(
+                            from 329deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    91.92% {
+                        background: repeating-conic-gradient(
+                            from 330deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    92.2% {
+                        background: repeating-conic-gradient(
+                            from 331deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    92.48% {
+                        background: repeating-conic-gradient(
+                            from 332deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    92.76% {
+                        background: repeating-conic-gradient(
+                            from 333deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    93.04% {
+                        background: repeating-conic-gradient(
+                            from 334deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    93.31% {
+                        background: repeating-conic-gradient(
+                            from 335deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    93.59% {
+                        background: repeating-conic-gradient(
+                            from 336deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    93.87% {
+                        background: repeating-conic-gradient(
+                            from 337deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    94.15% {
+                        background: repeating-conic-gradient(
+                            from 338deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    94.43% {
+                        background: repeating-conic-gradient(
+                            from 339deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    94.71% {
+                        background: repeating-conic-gradient(
+                            from 340deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    94.99% {
+                        background: repeating-conic-gradient(
+                            from 341deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    95.26% {
+                        background: repeating-conic-gradient(
+                            from 342deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    95.54% {
+                        background: repeating-conic-gradient(
+                            from 343deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    95.82% {
+                        background: repeating-conic-gradient(
+                            from 344deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    96.1% {
+                        background: repeating-conic-gradient(
+                            from 345deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    96.38% {
+                        background: repeating-conic-gradient(
+                            from 346deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    96.66% {
+                        background: repeating-conic-gradient(
+                            from 347deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    96.94% {
+                        background: repeating-conic-gradient(
+                            from 348deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    97.21% {
+                        background: repeating-conic-gradient(
+                            from 349deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    97.49% {
+                        background: repeating-conic-gradient(
+                            from 350deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    97.77% {
+                        background: repeating-conic-gradient(
+                            from 351deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    98.05% {
+                        background: repeating-conic-gradient(
+                            from 352deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    98.33% {
+                        background: repeating-conic-gradient(
+                            from 353deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    98.61% {
+                        background: repeating-conic-gradient(
+                            from 354deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    98.89% {
+                        background: repeating-conic-gradient(
+                            from 355deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    99.16% {
+                        background: repeating-conic-gradient(
+                            from 356deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    99.44% {
+                        background: repeating-conic-gradient(
+                            from 357deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    99.72% {
+                        background: repeating-conic-gradient(
+                            from 358deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
+                    }
+                    100% {
+                        background: repeating-conic-gradient(
+                            from 359deg at 40% 15.5%,
+                            rgba(0, 0, 0, 0.45) 0deg 20deg,
+                            rgba(253, 62, 62, 0.1) 20deg 24.5deg,
+                            rgba(225, 225, 225, 0.25) 24.5deg 40deg,
+                            rgba(77, 232, 244, 0.1) 40deg 44.5deg
+                        );
                     }
                 }
             </style>
