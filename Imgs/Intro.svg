@@ -16,14 +16,20 @@
                     grid-row-start: 2; <!--2 so text is vertically-centered-->
                     grid-column-start: 1;
 
+                    opacity: 0;
+
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
   --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-                    animation: myGlitchAnim 1.55s cubic-bezier(0.33, 1, 0.68, 1) infinite 0.75s alternate-reverse;
-
   <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
-  <!--animation: myScaling 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;-->
+                    animation:
+                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) forwards 0.75s,
+                        <!--myScaleAnim 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,-->
+                        myGlitchAnim 1.55s cubic-bezier(0.33, 1, 0.68, 1) infinite 0.75s alternate-reverse;
+
+
+  <!--animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(index) * 120ms);-->
                 }
 
                 .outerContainer div:nth-child(odd) {
@@ -54,6 +60,24 @@
   }
 }
 
+                @keyframes myOpacityAnim {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes myScaleAnim {
+                    0% {
+                        transform: scale(0.45);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
                 @keyframes myGlitchAnim {
                     0% {
                         text-shadow: -3px 3px 0 rgba(253, 62, 62, 0.75), 3px -3px 0 rgba(77, 232, 244, 0.75);
@@ -73,6 +97,9 @@
                         transform: none;
                     }
                 }
+                
+                
+
 
                 .outerContainer {
                     display: grid;
@@ -115,15 +142,6 @@
                     );
                     
                     animation: myBgSizeAnim 250ms ease infinite;
-                }
-
-                @keyframes myScaling {
-                    0% {
-                        transform: scale(0.45);
-                    }
-                    100% {
-                        transform: scale(1);
-                    }
                 }
                 
                 @keyframes myBgSizeAnim {
