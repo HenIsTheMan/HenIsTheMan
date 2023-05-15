@@ -3,77 +3,22 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
             <div class="outerOuterOuterContainer">
                 <div class="outerOuterContainer">
-                    <div class="outerContainer" style="--stacks: 3;">
-                        <div style="--index: 0;">Welcome To HenIsTheMan's GitHub!</div>
-                        <div style="--index: 1;">Welcome To HenIsTheMan's GitHub!</div>
-                        <div style="--index: 2;">Welcome To HenIsTheMan's GitHub!</div>
+                    <div class="outerContainer">
+                        <div>Welcome To HenIsTheMan's GitHub!</div>
+                        <div>Welcome To HenIsTheMan's GitHub!</div>
+                        <div>Welcome To HenIsTheMan's GitHub!</div>
+                        <div>Welcome To HenIsTheMan's GitHub!</div>
                     </div>
                 </div>
             </div>
             
 			<style>
-                .outerContainer div {
-                    grid-row-start: 2; <!--2 so text is vertically-centered-->
-                    grid-column-start: 1;
-
-  --stack-height: calc(100% / var(--stacks) - 1px);
-  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-  --clip-top: calc(var(--stack-height) * var(--index));
-  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-  <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
-                    animation:
-                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
-                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both,
-                        myGlitchAnim 1.55s cubic-bezier(0.33, 1, 0.68, 1) infinite 1.85s alternate-reverse;
-
-
-  <!--animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(index) * 120ms);-->
-                }
-
-                .outerContainer div:nth-child(odd) {
+                .outerContainer div:nth-child(odd) { <!--1st child, 3rd child...-->
                     --movement-dir: -1px;
                 }
 
-                .outerContainer div:nth-child(even) {
+                .outerContainer div:nth-child(even) { <!--2nd child, 4th child...-->
                     --movement-dir: 1px;
-                }
-
-@keyframes stack {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-    text-shadow: -2px 3px 0 rgba(253, 62, 62, 0.9), 2px -3px 0 rgba(77, 232, 244, 0.9);
-  };
-  60% {
-    opacity: 0.5;
-    transform: translateX(50%);
-  }
-  80% {
-    transform: none;
-    opacity: 1;
-    text-shadow: 2px -3px 0 rgba(253, 62, 62, 0.9), -2px 3px 0 rgba(77, 232, 244, 0.9);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
-                @keyframes myOpacityAnim {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 1;
-                    }
-                }
-
-                @keyframes myScaleAnim {
-                    0% {
-                        transform: scale(0.45);
-                    }
-                    100% {
-                        transform: scale(1);
-                    }
                 }
 
                 @keyframes myGlitchAnim {
@@ -94,10 +39,70 @@
                         text-shadow: none;
                         transform: none;
                     }
+                    
+                    <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
                 }
                 
+                .outerContainer div:nth-child(1) {
+                    animation:
+                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
+                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both,
+                        myTxtShadowAnim 1.75s 1.85s infinite;
+                }
                 
+                @keyframes myTxtShadowAnim {
+                    0%,
+                    20% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                    22% {
+                        text-shadow: 7px -2px 2px rgba(253, 62, 62, 0.75), -7px 2px 2px rgba(77, 232, 244, 0.75);
+                    }
+                    24%,
+                    28% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                    30% {
+                        text-shadow: 5px -5px 2px rgba(253, 62, 62, 0.75), -5px 5px 2px rgba(77, 232, 244, 0.75);
+                    }
+                    32%,
+                    42% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                    44% {
+                        text-shadow: 4px -4px 2px rgba(253, 62, 62, 0.75), -4px 4px 2px rgba(77, 232, 244, 0.75);
+                    }
+                    46%,
+                    70% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                    72% {
+                        text-shadow: 12px 0 2px rgba(253, 62, 62, 0.75), -12px 0 2px rgba(77, 232, 244, 0.75);
+                    }
+                    74%,
+                    78% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                    80% {
+                        text-shadow: 0 15px 2px rgba(253, 62, 62, 0.75), 0 -15px 2px rgba(77, 232, 244, 0.75);
+                    }
+                    82%,
+                    100% {
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
+                    }
+                }
 
+
+
+
+                .outerContainer div {
+                    grid-row-start: 2; <!--2 so text is vertically-centered-->
+                    grid-column-start: 1;
+
+                    animation:
+                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
+                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both;
+                }
 
                 .outerContainer {
                     display: grid;
@@ -142,6 +147,24 @@
                     animation: myBgSizeAnim 250ms ease infinite;
                 }
                 
+                @keyframes myOpacityAnim {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes myScaleAnim {
+                    0% {
+                        transform: scale(0.45);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
                 @keyframes myBgSizeAnim {
                     0% {
                         background-size: auto 4px;
