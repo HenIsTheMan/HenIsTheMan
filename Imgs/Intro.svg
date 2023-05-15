@@ -77,8 +77,12 @@
 
 
                 .outerContainer div {
-                    grid-row-start: 2; <!--2 so text is vertically-centered-->
                     grid-column-start: 1;
+                    grid-row-start: 1;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .outerContainer {
