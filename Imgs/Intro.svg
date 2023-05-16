@@ -16,101 +16,101 @@
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myBackTxtAnim 3.99s 1.85s infinite alternate-reverse backwards;
+                        myBackTxtAnim 9.99s 1.85s infinite alternate-reverse backwards;
                 }
                 
                 .outerContainer div:nth-child(2) {
                     clip-path: polygon(0 0, 100% 0, 0 100%);
 
-                    --xTranslateVal0: 0;
+                    --xTranslateVal0: 11;
                     --yTranslateVal0: 0;
-                    --xTranslateVal1: 0;
-                    --yTranslateVal1: 0;
-                    --xTranslateVal2: 0;
-                    --yTranslateVal2: 0;
-                    --xTranslateVal3: -10;
+                    --xTranslateVal1: 8;
+                    --yTranslateVal1: 7;
+                    --xTranslateVal2: 9;
+                    --yTranslateVal2: 9;
+                    --xTranslateVal3: 18;
                     --yTranslateVal3: 0;
                     --xTranslateVal4: 0;
-                    --yTranslateVal4: 14;
+                    --yTranslateVal4: 22;
                 
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myTransformAnim 3.99s 1.85s infinite alternate-reverse;
+                        myTransformAnim 9.99s 1.85s infinite alternate-reverse;
                 }
                 
                 .outerContainer div:nth-child(3) {
                     clip-path: polygon(100% 100%, 100% 0, 0 100%);
 
-                    --xTranslateVal0: 0;
+                    --xTranslateVal0: -10;
                     --yTranslateVal0: 0;
-                    --xTranslateVal1: 0;
-                    --yTranslateVal1: 0;
-                    --xTranslateVal2: 0;
-                    --yTranslateVal2: 0;
-                    --xTranslateVal3: 10;
+                    --xTranslateVal1: 7;
+                    --yTranslateVal1: 8;
+                    --xTranslateVal2: -9;
+                    --yTranslateVal2: -9;
+                    --xTranslateVal3: -15;
                     --yTranslateVal3: 0;
                     --xTranslateVal4: 0;
-                    --yTranslateVal4: -14;
+                    --yTranslateVal4: -18;
                 
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myTransformAnim 3.99s 1.85s infinite alternate-reverse;
+                        myTransformAnim 9.99s 1.85s infinite alternate-reverse;
                 }
                 
                 @keyframes myBackTxtAnim {
                     0%,
+                    9.5% {
+                        <!--base-->
+                        color: white;
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
+                    }
+                    10% {
+                        color: transparent;
+                        text-shadow: 8px -5px 1px rgba(253, 62, 62, 0.75), -8px 5px 1px rgba(77, 232, 244, 0.75);
+                    }
+                    10.5%,
+                    19.5% {
+                        <!--base-->
+                        color: white;
+                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
+                    }
                     20% {
+                        color: transparent;
+                        text-shadow: 6px 9px 0 rgba(253, 62, 62, 0.75), -6px -9px 0 rgba(77, 232, 244, 0.75);
+                    }
+                    20.5%,
+                    34.5% {
                         <!--base-->
                         color: white;
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
                     }
-                    21% {
+                    35% {
                         color: transparent;
-                        text-shadow: 7px -2px 2px rgba(253, 62, 62, 0.75), -7px 2px 2px rgba(77, 232, 244, 0.75);
+                        text-shadow: 7px -7px 0 rgba(253, 62, 62, 0.75), -7px 7px 0 rgba(77, 232, 244, 0.75);
                     }
-                    22%,
-                    29% {
+                    35.5%,
+                    69.5% {
                         <!--base-->
                         color: white;
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
                     }
-                    30% {
-                        color: transparent;
-                        text-shadow: 5px -5px 2px rgba(253, 62, 62, 0.75), -5px 5px 2px rgba(77, 232, 244, 0.75);
-                    }
-                    31%,
-                    44% {
-                        <!--base-->
-                        color: white;
-                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
-                    }
-                    45% {
-                        color: transparent;
-                        text-shadow: 4px -4px 2px rgba(253, 62, 62, 0.75), -4px 4px 2px rgba(77, 232, 244, 0.75);
-                    }
-                    46%,
                     70% {
-                        <!--base-->
-                        color: white;
-                        text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
-                    }
-                    71% {
                         color: transparent;
-                        text-shadow: 12px 0 2px rgba(253, 62, 62, 0.75), -12px 0 2px rgba(77, 232, 244, 0.75);
+                        text-shadow: 12px 0 1px rgba(253, 62, 62, 0.75), -15px 0 1px rgba(77, 232, 244, 0.75);
                     }
-                    72%,
-                    79% {
+                    70.5%,
+                    79.5% {
                         <!--base-->
                         color: white;
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
                     }
                     80% {
                         color: transparent;
-                        text-shadow: 0 15px 2px rgba(253, 62, 62, 0.75), 0 -15px 2px rgba(77, 232, 244, 0.75);
+                        text-shadow: 0 18px 1px rgba(253, 62, 62, 0.75), 0 -14px 1px rgba(77, 232, 244, 0.75);
                     }
-                    81%,
+                    80.5%,
                     100% {
                         <!--base-->
                         color: white;
@@ -120,41 +120,41 @@
                 
                 @keyframes myTransformAnim {
                     0%,
-                    20% {
+                    9.5% {
                         transform: none; <!--base-->
                     }
-                    21% {
+                    10% {
                         transform: translate(calc(var(--xTranslateVal0) * 1px), calc(var(--yTranslateVal0) * 1px));
                     }
-                    22%,
-                    29% {
+                    10.5%,
+                    19.5% {
                         transform: none; <!--base-->
                     }
-                    30% {
+                    20% {
                         transform: translate(calc(var(--xTranslateVal1) * 1px), calc(var(--yTranslateVal1) * 1px));
                     }
-                    31%,
-                    44% {
+                    20.5%,
+                    34.5% {
                         transform: none; <!--base-->
                     }
-                    45% {
+                    35% {
                         transform: translate(calc(var(--xTranslateVal2) * 1px), calc(var(--yTranslateVal2) * 1px));
                     }
-                    46%,
-                    70% {
+                    35.5%,
+                    69.5% {
                         transform: none; <!--base-->
                     }
-                    71% {
+                    70% {
                         transform: translate(calc(var(--xTranslateVal3) * 1px), calc(var(--yTranslateVal3) * 1px));
                     }
-                    72%,
-                    79% {
+                    70.5%,
+                    79.5% {
                         transform: none; <!--base-->
                     }
                     80% {
                         transform: translate(calc(var(--xTranslateVal4) * 1px), calc(var(--yTranslateVal4) * 1px));
                     }
-                    81%,
+                    80.5%,
                     100% {
                         transform: none; <!--base-->
                     }
