@@ -32,7 +32,7 @@
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/JsonLogoImg.png"></a></code>
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/GitKrakenLogoImg.jpg"></a></code>
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/VsLogoImg.png"></a></code>
-        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/SparkArLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/MetaSparkStudioLogoImg.png"></a></code>
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/VbaLogoImg.png"></a></code>
     </p>
 </details>
