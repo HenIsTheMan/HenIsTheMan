@@ -2,7 +2,7 @@
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img width=100% src="Imgs/Intro.svg"></a>
 
-## 💻🖥️ Coding/Programming
+<h1><samp>💻🖥️ Coding/Programming</samp></h1>
 <details open>
     <summary>📽📽 Past</summary>
     <p align="center">
