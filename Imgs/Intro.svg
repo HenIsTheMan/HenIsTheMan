@@ -1,16 +1,18 @@
 <svg viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
-            <div class="outerOuterContainer">
-                <div class="outerContainer">
-                    <div class="blueInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
-                    <div class="whiteInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
-                    <div class="redInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
+            <div class="outerOuterOuterContainer">
+                <div class="outerOuterContainer">
+                    <div class="outerContainer">
+                        <div class="blueInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
+                        <div class="whiteInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
+                        <div class="redInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
+                    </div>
                 </div>
             </div>
             
 			<style>
-                .outerOuterContainer {
+                .outerOuterOuterContainer {
                     background: linear-gradient(
                         to bottom,
                         black,
@@ -21,6 +23,17 @@
                     );
                     
                     animation: myBgSizeAnim 250ms ease infinite;
+                }
+                
+                .outerOuterContainer {
+                    background: radial-gradient(
+                        color-mix(
+                            in oklab,
+                            rgba(77, 232, 244, 0.45),
+                            rgba(253, 62, 62, 0.45)
+                        ) 0%,
+                        transparent 85%
+                    );
                 }
 
                 .outerContainer {
