@@ -1,10 +1,8 @@
 # HenIsTheMan, isn't he?
 
-<div align="center">
-    <a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width=100% src="Imgs/Intro.svg"></a>
-</div>
+<a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width=100% src="Imgs/Intro.svg"></a>
 
-### 💻🖥️ Coding/Programming
+## 💻🖥️ Coding/Programming
 <details open>
     <summary>📽📽 Past</summary>
     <p align="center">
@@ -48,13 +46,6 @@
     </p>
 </details>
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 50%;">
-        <img style="width: 49%" src="https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-        <img style="width: 49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&card_width=500&custom_title=HenIsTheMan%27s%20Most%20Used%20Langs&layout=compact&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </div>
-    <div style="flex: 50%;">
-        <img style="width: 49%" src="https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-        <img style="width: 49%" src="https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=5&row=1&col=0&no-bg=false&no-frame=false">
-    </div>
-</div>
+<br>
+
+<a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width=100% src="Imgs/Persona.webp"></a>
