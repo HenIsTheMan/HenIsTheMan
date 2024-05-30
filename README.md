@@ -1,40 +1,54 @@
 # HenIsTheMan, isn't he?
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/HenIsTheMan/HenIsTheMan)
-
-### 🦾🦾🦾🦾
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/gamemaker/gamemaker.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/lua/lua.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/opengl/opengl.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/unity/unity.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png"></code>
-
-### 📚📚📚📚
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height = "40" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
-
-### 📊 Data
+### 💻🖥️ Coding/Programming
 <details>
-    <summary>GitHub</summary>
-    <br>
-    <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
-        <img align = "center" src = "https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </a>
-    <a href="https://github.com/HenIsTheMan/HenIsTheMan">
-        <img align = "center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan's Most Used Langs&layout=compact&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515">
-    </a>
+    <summary>📽📽 Past</summary>
+    <p align="center">
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GameMakerLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/HtmlLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/CssLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JsLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/VsCodeLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GitHubLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/LuaLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/JavaLogoImg.jpg"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/AndroidStudioLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/SqlLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/MySqlLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/FirebaseLogoImg.png"></a></code>
+    </p>
+</details>
+<details>
+    <summary>🎁🎁 Present</summary>
+    <p align="center">
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/OpenGlLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CppLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/CSharpLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/UnityLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/JsonLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/GitKrakenLogoImg.jpg"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/VsLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/SparkArLogoImg.png"></a></code>
+    </p>
+</details>
+<details>
+    <summary>❓❔ Future</summary>
+    <p align="center">
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VulkanLogoImg.jpg"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/WebGlLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/CLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/PythonLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/TypeScriptLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/NodeJsLogoImg.png"></a></code>
+        <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/GitLogoImg.png"></a></code>
+    </p>
 </details>
 
-### 🏆 Trophies
-[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=4&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/HenIsTheMan/HenIsTheMan)
+<p align="center">
+    <a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width=54% src="https://github-readme-stats.vercel.app/api/?username=HenIsTheMan&include_all_commits=false&count_private=true&show_icons=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515"></a>
+    <a href="https://github.com/HenIsTheMan/HenIsTheMan"><img width=45% src="https://github-readme-stats.vercel.app/api/top-langs/?username=HenIsTheMan&custom_title=HenIsTheMan%27s%20Most%20Used%20Langs&layout=compact&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515"></a>
+</p>
+
+✨ Featured ✨ | 🏆 Trophies 🏆
+:-:|:-:
+[![RepoCard](https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/HenIsTheMan/HenIsTheMan) | [![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=5&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/HenIsTheMan/HenIsTheMan)
