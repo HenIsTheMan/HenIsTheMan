@@ -5,21 +5,29 @@
                 <div class="outerOuterContainer">
                     <div class="outerContainer">
                         <div>Welcome To HenIsTheMan's GitHub!</div>
-                        <div>Welcome To HenIsTheMan's GitHub!</div>
-                        <div>Welcome To HenIsTheMan's GitHub!</div>
-                        <div>Welcome To HenIsTheMan's GitHub!</div>
+                        <div style="--originCoordVal: 0; color: red;">Welcome To HenIsTheMan's GitHub!</div>
+                        <div style="--originCoordVal: 100; color: blue;">Welcome To HenIsTheMan's GitHub!</div>
                     </div>
                 </div>
             </div>
             
 			<style>
-                <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
-
                 .outerContainer div:nth-child(1) {
+                    color: transparent;
+
                     animation:
-                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
-                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both,
-                        myTxtShadowAnim 3.99s 1.85s infinite alternate-reverse;
+                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
+                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
+                        myTxtShadowAnim 3.99s 1.85s infinite alternate-reverse backwards;
+                }
+                
+                .outerContainer div:nth-child(n + 2) {
+                    --calculatedOriginCoord: calc(var(--originCoordVal) * 1%);
+                    clip-path: polygon(var(--calculatedOriginCoord) var(--calculatedOriginCoord), 100% 0, 0 100%);
+                
+                    animation:
+                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
+                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards;
                 }
                 
                 @keyframes myTxtShadowAnim {
@@ -67,13 +75,10 @@
 
 
 
+
                 .outerContainer div {
                     grid-row-start: 2; <!--2 so text is vertically-centered-->
                     grid-column-start: 1;
-
-                    animation:
-                        myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
-                        myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both;
                 }
 
                 .outerContainer {
