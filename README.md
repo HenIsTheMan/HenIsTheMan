@@ -5,7 +5,7 @@
 </div>
 
 ### 💻🖥️ Coding/Programming
-<details>
+<details open>
     <summary>📽📽 Past</summary>
     <p align="center">
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/GameMakerLogoImg.png"></a></code>
@@ -22,7 +22,7 @@
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PastLogoImgs/FirebaseLogoImg.png"></a></code>
     </p>
 </details>
-<details>
+<details open>
     <summary>🎁🎁 Present</summary>
     <p align="center">
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/OpenGlLogoImg.png"></a></code>
@@ -35,7 +35,7 @@
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/PresentLogoImgs/SparkArLogoImg.png"></a></code>
     </p>
 </details>
-<details>
+<details open>
     <summary>❓❔ Future</summary>
     <p align="center">
         <code><a href="https://github.com/HenIsTheMan/HenIsTheMan"><img height=45 src="https://raw.githubusercontent.com/HenIsTheMan/HenIsTheMan/main/Imgs/FutureLogoImgs/VulkanLogoImg.jpg"></a></code>
