@@ -121,42 +121,59 @@
                 @keyframes myTransformAnim {
                     0%,
                     9.5% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                     10% {
+                        color: rgba(75, 75, 75, 1);
                         transform: translate(calc(var(--xTranslateVal0) * 1px), calc(var(--yTranslateVal0) * 1px));
                     }
                     10.5%,
                     19.5% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                     20% {
+                        color: rgba(25, 25, 25, 1);
                         transform: translate(calc(var(--xTranslateVal1) * 1px), calc(var(--yTranslateVal1) * 1px));
                     }
                     20.5%,
                     34.5% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                     35% {
+                        color: rgba(45, 45, 45, 1);
                         transform: translate(calc(var(--xTranslateVal2) * 1px), calc(var(--yTranslateVal2) * 1px));
                     }
                     35.5%,
                     69.5% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                     70% {
+                        color: rgba(85, 85, 85, 1);
                         transform: translate(calc(var(--xTranslateVal3) * 1px), calc(var(--yTranslateVal3) * 1px));
                     }
                     70.5%,
                     79.5% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                     80% {
+                        color: rgba(55, 55, 55, 1);
                         transform: translate(calc(var(--xTranslateVal4) * 1px), calc(var(--yTranslateVal4) * 1px));
                     }
                     80.5%,
                     100% {
-                        transform: none; <!--base-->
+                        <!--base-->
+                        color: white;
+                        transform: none;
                     }
                 }
 
