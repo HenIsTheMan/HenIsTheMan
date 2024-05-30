@@ -34,6 +34,107 @@
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
                         myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
                 }
+
+                .outerContainer div {
+                    grid-column-start: 1;
+                    grid-row-start: 1;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .outerContainer {
+                    display: grid;
+                    grid-template-columns: 1fr; <!--1 col grid-->
+
+                    height: 400px;
+                    
+                    font-family:
+                        "Trebuchet MS",
+                        "Courier New";
+
+                    color: white;
+                    font-size: 4rem;
+                    font-weight: bold;
+                    letter-spacing: 8px;
+                    text-align: center;
+                    
+                    animation:
+                        myRotatingStarburstAnim 7.5s infinite reverse,
+                        myCircleClipPathAnim 0.75s;
+                }
+
+                .outerOuterContainer {
+                    background: radial-gradient(
+                        color-mix(
+                            in oklab,
+                            rgba(77, 232, 244, 0.45),
+                            rgba(253, 62, 62, 0.45)
+                        ) 0%,
+                        transparent 85%
+                    );
+                }
+                
+                .outerOuterOuterContainer {
+                    background: linear-gradient(
+                        to bottom,
+                        black,
+                        black 60%,
+                        #333 60%,
+                        #333 90%,
+                        rgba(114, 114, 114, 1)
+                    );
+                    
+                    animation: myBgSizeAnim 250ms ease infinite;
+                }
+                
+                @keyframes myOpacityAnim {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes myScaleAnim {
+                    0% {
+                        transform: scale(0.45);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                @keyframes myBgSizeAnim {
+                    0%,
+                    100% {
+                        background-size: auto 4px;
+                    }
+                    20%,
+                    60% {
+                        background-size: auto 2px;
+                    }
+                    40% {
+                        background-size: auto 5px;
+                    }
+                    80% {
+                        background-size: auto 3px;
+                    }
+                }
+                
+                @keyframes myCircleClipPathAnim {
+                    0% {
+                        clip-path: circle(10% at 40% 15.5%);
+                    }
+                    75% {
+                        clip-path: circle(90% at 40% 15.5%);
+                    }
+                    100% {
+                        clip-path: circle(100% at 40% 15.5%);
+                    }
+                }
                 
                 @keyframes myTxtShadowAnim {
                     0%,
@@ -142,113 +243,9 @@
                         transform: translateY(12%) scale(1.05);
                     }
                 }
-
-
-
-
-
-                .outerContainer div {
-                    grid-column-start: 1;
-                    grid-row-start: 1;
-                    
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .outerContainer {
-                    display: grid;
-                    grid-template-columns: 1fr; <!--1 col grid-->
-
-                    height: 400px;
-                    
-                    font-family:
-                        "Trebuchet MS",
-                        "Courier New";
-
-                    color: white;
-                    font-size: 4rem;
-                    font-weight: bold;
-                    letter-spacing: 8px;
-                    text-align: center;
-                    
-                    animation:
-                        myRotationAnim 7.5s infinite reverse,
-                        myCircleClipPathAnim 0.75s;
-                }
-
-                .outerOuterContainer {
-                    background: radial-gradient(
-                        color-mix(
-                            in oklab,
-                            rgba(77, 232, 244, 0.45),
-                            rgba(253, 62, 62, 0.45)
-                        ) 0%,
-                        transparent 85%
-                    );
-                }
                 
-                .outerOuterOuterContainer {
-                    background: linear-gradient(
-                        to bottom,
-                        black,
-                        black 60%,
-                        #333 60%,
-                        #333 90%,
-                        rgba(114, 114, 114, 1)
-                    );
-                    
-                    animation: myBgSizeAnim 250ms ease infinite;
-                }
-                
-                @keyframes myOpacityAnim {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 1;
-                    }
-                }
-
-                @keyframes myScaleAnim {
-                    0% {
-                        transform: scale(0.45);
-                    }
-                    100% {
-                        transform: scale(1);
-                    }
-                }
-
-                @keyframes myBgSizeAnim {
-                    0%,
-                    100% {
-                        background-size: auto 4px;
-                    }
-                    20%,
-                    60% {
-                        background-size: auto 2px;
-                    }
-                    40% {
-                        background-size: auto 5px;
-                    }
-                    80% {
-                        background-size: auto 3px;
-                    }
-                }
-                
-                @keyframes myCircleClipPathAnim {
-                    0% {
-                        clip-path: circle(10% at 40% 15.5%);
-                    }
-                    75% {
-                        clip-path: circle(90% at 40% 15.5%);
-                    }
-                    100% {
-                        clip-path: circle(100% at 40% 15.5%);
-                    }
-                }
-                
-                <!--@keyframes myRotationAnim {
+                <!--
+                @keyframes myRotatingStarburstAnim {
                     $steps: 359;
                     @for $i from 0 through $steps {
                         #{round(percentage($i * (1 / $steps)) * 100) / 100} {
@@ -261,9 +258,10 @@
                             );
                         }
                     }
-                }-->
+                }
+                -->
                 
-                @keyframes myRotationAnim {
+                @keyframes myRotatingStarburstAnim {
                     0% {
                         background: repeating-conic-gradient(
                             from 0deg at 40% 15.5%,
