@@ -107,9 +107,8 @@
                     );
                     position: relative;
 
-                    font-size: 100px; //50px;
-                    padding-top: 150px;
-                    //letter-spacing: 5px;
+                    font-size: 100px;
+                    letter-spacing: 5px; <!-- Can change freely -->
                     //animation: myScaling 1.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
    
                     text-align: center;
@@ -134,13 +133,13 @@
                 .container:before {
                     left: -2px;
                     text-shadow: 2px 0 rgba(253, 62, 62, 0.9);
-                    animation: myGlitchNoise 2700ms infinite linear alternate-reverse; //??
+                    animation: myGlitchNoise 2700ms infinite steps(14, end) alternate-reverse;
                 }
 
                 .container:after {
                     left: 2px;
                     text-shadow: -2px 0 rgba(77, 232, 244, 0.9);
-                    animation: myGlitchNoise 2200ms infinite linear alternate-reverse; //??
+                    animation: myGlitchNoise 2200ms infinite steps(17, jump-both);
                 }
             </style>
 		</div>
