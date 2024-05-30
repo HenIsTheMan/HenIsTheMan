@@ -13,41 +13,13 @@
             </div>
             
 			<style>
-                .outerContainer div:nth-child(odd) { <!--1st child, 3rd child...-->
-                    --movement-dir: -1px;
-                }
+                <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
 
-                .outerContainer div:nth-child(even) { <!--2nd child, 4th child...-->
-                    --movement-dir: 1px;
-                }
-
-                @keyframes myGlitchAnim {
-                    0% {
-                        text-shadow: -3px 3px 0 rgba(253, 62, 62, 0.75), 3px -3px 0 rgba(77, 232, 244, 0.75);
-                        transform: translate(calc(var(--movement-dir) * 7));
-                    }
-                    1.75% {
-                        text-shadow: -4px 5px 0 rgba(253, 62, 62, 0.75), 4px -5px 0 rgba(77, 232, 244, 0.75);
-                        transform: translate(calc(var(--movement-dir) * 2));
-                    }
-                    2.7% {
-                        text-shadow: -2px 2px 0 rgba(253, 62, 62, 0.75), 2px -2px 0 rgba(77, 232, 244, 0.75);
-                        transform: translate(calc(var(--movement-dir) * -5));
-                    }
-                    4.5%,
-                    100% {
-                        text-shadow: none;
-                        transform: none;
-                    }
-                    
-                    <!--clip-path: inset(var(clip-top) 0 var(clip-bottom) 0);-->
-                }
-                
                 .outerContainer div:nth-child(1) {
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s both,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both,
-                        myTxtShadowAnim 1.75s 1.85s infinite;
+                        myTxtShadowAnim 3.99s 1.85s infinite alternate-reverse;
                 }
                 
                 @keyframes myTxtShadowAnim {
@@ -55,38 +27,38 @@
                     20% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
-                    22% {
+                    21% {
                         text-shadow: 7px -2px 2px rgba(253, 62, 62, 0.75), -7px 2px 2px rgba(77, 232, 244, 0.75);
                     }
-                    24%,
-                    28% {
+                    22%,
+                    29% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
                     30% {
                         text-shadow: 5px -5px 2px rgba(253, 62, 62, 0.75), -5px 5px 2px rgba(77, 232, 244, 0.75);
                     }
-                    32%,
-                    42% {
+                    31%,
+                    44% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
-                    44% {
+                    45% {
                         text-shadow: 4px -4px 2px rgba(253, 62, 62, 0.75), -4px 4px 2px rgba(77, 232, 244, 0.75);
                     }
                     46%,
                     70% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
-                    72% {
+                    71% {
                         text-shadow: 12px 0 2px rgba(253, 62, 62, 0.75), -12px 0 2px rgba(77, 232, 244, 0.75);
                     }
-                    74%,
-                    78% {
+                    72%,
+                    79% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
                     80% {
                         text-shadow: 0 15px 2px rgba(253, 62, 62, 0.75), 0 -15px 2px rgba(77, 232, 244, 0.75);
                     }
-                    82%,
+                    81%,
                     100% {
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75); <!--base-->
                     }
