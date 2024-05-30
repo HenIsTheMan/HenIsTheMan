@@ -13,53 +13,29 @@
             
 			<style>
                 .outerContainer div:nth-child(1) {
+                    color: transparent;
+
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myBackTxtAnim 9.99s 1.85s infinite alternate-reverse backwards;
+                        myTxtShadowAnim 9.99s 1.85s infinite alternate-reverse backwards;
                 }
                 
                 .outerContainer div:nth-child(2) {
-                    clip-path: polygon(0 0, 100% 0, 0 100%);
-
-                    --xTranslateVal0: 11;
-                    --yTranslateVal0: 0;
-                    --xTranslateVal1: 8;
-                    --yTranslateVal1: 7;
-                    --xTranslateVal2: 9;
-                    --yTranslateVal2: 9;
-                    --xTranslateVal3: 18;
-                    --yTranslateVal3: 0;
-                    --xTranslateVal4: 0;
-                    --yTranslateVal4: 22;
-                
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myTransformAnim 9.99s 1.85s infinite alternate-reverse;
+                        myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
                 }
                 
                 .outerContainer div:nth-child(3) {
-                    clip-path: polygon(100% 100%, 100% 0, 0 100%);
-
-                    --xTranslateVal0: -10;
-                    --yTranslateVal0: 0;
-                    --xTranslateVal1: 7;
-                    --yTranslateVal1: 8;
-                    --xTranslateVal2: -9;
-                    --yTranslateVal2: -9;
-                    --xTranslateVal3: -15;
-                    --yTranslateVal3: 0;
-                    --xTranslateVal4: 0;
-                    --yTranslateVal4: -18;
-                
                     animation:
                         myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
                         myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
-                        myTransformAnim 9.99s 1.85s infinite alternate-reverse;
+                        myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
                 }
                 
-                @keyframes myBackTxtAnim {
+                @keyframes myTxtShadowAnim {
                     0%,
                     9.5%,
                     10.5%,
@@ -72,32 +48,26 @@
                     79.5%,
                     80.5%,
                     100% {
-                        color: white;
                         text-shadow: 3px 0 2px rgba(253, 62, 62, 0.75), -3px 0 2px rgba(77, 232, 244, 0.75);
                     }
                     10% {
-                        color: transparent;
                         text-shadow: 8px -5px 1px rgba(253, 62, 62, 0.75), -8px 5px 1px rgba(77, 232, 244, 0.75);
                     }
                     20% {
-                        color: transparent;
                         text-shadow: 6px 9px 0 rgba(253, 62, 62, 0.75), -6px -9px 0 rgba(77, 232, 244, 0.75);
                     }
                     35% {
-                        color: transparent;
-                        text-shadow: 7px -7px 0 rgba(253, 62, 62, 0.75), -7px 7px 0 rgba(77, 232, 244, 0.75);
+                        text-shadow: 7px 8px 0 rgba(253, 62, 62, 0.75), -7px -8px 0 rgba(77, 232, 244, 0.75);
                     }
                     70% {
-                        color: transparent;
                         text-shadow: 12px 0 1px rgba(253, 62, 62, 0.75), -15px 0 1px rgba(77, 232, 244, 0.75);
                     }
                     80% {
-                        color: transparent;
                         text-shadow: 0 18px 1px rgba(253, 62, 62, 0.75), 0 -14px 1px rgba(77, 232, 244, 0.75);
                     }
                 }
                 
-                @keyframes myTransformAnim {
+                @keyframes myDistortionAnim0 {
                     0%,
                     9.5%,
                     10.5%,
@@ -110,28 +80,66 @@
                     79.5%,
                     80.5%,
                     100% {
-                        color: white;
+                        clip-path: none;
                         transform: none;
                     }
                     10% {
-                        color: rgba(75, 75, 75, 1);
-                        transform: translate(calc(var(--xTranslateVal0) * 1px), calc(var(--yTranslateVal0) * 1px));
+                        clip-path: polygon(0 0, 0 100%, 25% 100%, 50% 0);
+                        transform: translate(-5%, 2.5%);
                     }
                     20% {
-                        color: rgba(25, 25, 25, 1);
-                        transform: translate(calc(var(--xTranslateVal1) * 1px), calc(var(--yTranslateVal1) * 1px));
+                        clip-path: polygon(0 0, 0 100%, 50% 100%, 75% 0);
+                        transform: translate(-1%, 7%);
                     }
                     35% {
-                        color: rgba(45, 45, 45, 1);
-                        transform: translate(calc(var(--xTranslateVal2) * 1px), calc(var(--yTranslateVal2) * 1px));
+                        clip-path: polygon(0 0, 100% 0, 0 100%);
+                        transform: translate(0.5%, 0.5%);
                     }
                     70% {
-                        color: rgba(85, 85, 85, 1);
-                        transform: translate(calc(var(--xTranslateVal3) * 1px), calc(var(--yTranslateVal3) * 1px));
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+                        transform: translateX(-10%);
                     }
                     80% {
-                        color: rgba(55, 55, 55, 1);
-                        transform: translate(calc(var(--xTranslateVal4) * 1px), calc(var(--yTranslateVal4) * 1px));
+                        clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
+                        transform: translateY(-12%);
+                    }
+                }
+                
+                @keyframes myDistortionAnim1 {
+                    0%,
+                    9.5%,
+                    10.5%,
+                    19.5%,
+                    20.5%,
+                    34.5%,
+                    35.5%,
+                    69.5%,
+                    70.5%,
+                    79.5%,
+                    80.5%,
+                    100% {
+                        clip-path: none;
+                        transform: none;
+                    }
+                    10% {
+                        clip-path: polygon(100% 0, 100% 100%, 25% 100%, 50% 0);
+                        transform: translate(5%, -2.5%);
+                    }
+                    20% {
+                        clip-path: polygon(100% 0, 100% 100%, 50% 100%, 75% 0);
+                        transform: translate(1%, -7%);
+                    }
+                    35% {
+                        clip-path: polygon(100% 100%, 100% 0, 0 100%);
+                        transform: translate(-0.5%, -0.5%);
+                    }
+                    70% {
+                        clip-path: polygon(0% 100%, 100% 100%, 100% 50%, 0% 50%);
+                        transform: translateX(10%);
+                    }
+                    80% {
+                        clip-path: polygon(100% 0, 100% 100%, 50% 100%, 50% 0%);
+                        transform: translateY(12%);
                     }
                 }
 
