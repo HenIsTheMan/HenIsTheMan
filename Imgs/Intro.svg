@@ -1,7 +1,9 @@
 <svg viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
-            <div class="container" data-text="GLITCH">GLITCH</div>
+            <div class="outerContainer">
+                <div class="innerContainer" my-text="GLITCH">GLITCH</div>
+            </div>
             
 			<style>
                 @keyframes myScaling {
@@ -91,7 +93,7 @@
                     }
                 }
 
-                .container {
+                .innerContainer {
                     font-family:
                         Tahoma,
                         "Trebuchet MS",
@@ -118,8 +120,8 @@
                     animation: myBgSizeAnim 200ms ease infinite;
                 }
                 
-                .container:before, .container:after {
-                    content: attr(data-text);
+                .innerContainer:before, .innerContainer:after {
+                    content: attr(my-text);
                 
                     color: white;
                     background: none;
@@ -130,13 +132,13 @@
                     height: 400px;
                 }
                 
-                .container:before {
+                .innerContainer:before {
                     left: -2px;
                     text-shadow: 2px 0 rgba(253, 62, 62, 0.9);
                     animation: myGlitchNoise 2700ms infinite steps(14, end) alternate-reverse;
                 }
 
-                .container:after {
+                .innerContainer:after {
                     left: 2px;
                     text-shadow: -2px 0 rgba(77, 232, 244, 0.9);
                     animation: myGlitchNoise 2200ms infinite steps(17, jump-both);
