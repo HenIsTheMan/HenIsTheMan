@@ -84,16 +84,16 @@
                         transform: none;
                     }
                     10% {
-                        clip-path: polygon(0 0, 0 100%, 25% 100%, 50% 0);
-                        transform: translate(-5%, 2.5%);
+                        clip-path: polygon(0 0, 0 100%, 50% 100%, 25% 0);
+                        transform: translate(-5%, 2.5%) skewY(-1.5deg);
                     }
                     20% {
                         clip-path: polygon(0 0, 0 100%, 50% 100%, 75% 0);
-                        transform: translate(-1%, 7%);
+                        transform: translate(-1%, 7%) skew(4.5deg, 0.07rad);
                     }
                     35% {
                         clip-path: polygon(0 0, 100% 0, 0 100%);
-                        transform: translate(0.5%, 0.5%);
+                        transform: translate(0.5%, 0.5%) scale(1.1, 0.9) skewX(-0.2rad);
                     }
                     70% {
                         clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
@@ -101,7 +101,7 @@
                     }
                     80% {
                         clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
-                        transform: translateY(-12%);
+                        transform: translateY(-12%) scale(0.95);
                     }
                 }
                 
@@ -122,16 +122,16 @@
                         transform: none;
                     }
                     10% {
-                        clip-path: polygon(100% 0, 100% 100%, 25% 100%, 50% 0);
-                        transform: translate(5%, -2.5%);
+                        clip-path: polygon(100% 0, 100% 100%, 50% 100%, 25% 0);
+                        transform: translate(5%, -2.5%) skewY(1.5deg);
                     }
                     20% {
                         clip-path: polygon(100% 0, 100% 100%, 50% 100%, 75% 0);
-                        transform: translate(1%, -7%);
+                        transform: translate(1%, -7%) skew(-4.5deg, 0.07rad);
                     }
                     35% {
                         clip-path: polygon(100% 100%, 100% 0, 0 100%);
-                        transform: translate(-0.5%, -0.5%);
+                        transform: translate(-0.5%, -0.5%) scale(0.9, 1.1) skewX(-0.25rad);
                     }
                     70% {
                         clip-path: polygon(0% 100%, 100% 100%, 100% 50%, 0% 50%);
@@ -139,7 +139,7 @@
                     }
                     80% {
                         clip-path: polygon(100% 0, 100% 100%, 50% 100%, 50% 0%);
-                        transform: translateY(12%);
+                        transform: translateY(12%) scale(1.05);
                     }
                 }
 
