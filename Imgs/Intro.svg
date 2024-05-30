@@ -3,15 +3,88 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
             <div class="outerOuterOuterContainer">
                 <div class="outerOuterContainer">
-                    <div class="outerContainer">
-                        <div class="blueInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
-                        <div class="whiteInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
-                        <div class="redInnerContainer">Welcome To HenIsTheMan's GitHub!</div>
+                    <div class="outerContainer" style="--stacks: 3;">
+                        <div class="blueInnerContainer" style="--index: 0;">Welcome To HenIsTheMan's GitHub!</div>
+                        <div class="whiteInnerContainer" style="--index: 1;">Welcome To HenIsTheMan's GitHub!</div>
+                        <div class="redInnerContainer" style="--index: 2;">Welcome To HenIsTheMan's GitHub!</div>
                     </div>
                 </div>
             </div>
             
 			<style>
+.outerContainer div {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 4rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: myScaling 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.outerContainer div:nth-child(odd) { --glitch-translate: 8px; }
+.outerContainer div:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 rgba(253, 62, 62, 0.9), 2px -3px 0 rgba(77, 232, 244, 0.9);
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 rgba(253, 62, 62, 0.9), -2px 3px 0 rgba(77, 232, 244, 0.9);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 rgba(253, 62, 62, 0.9), 2px -3px 0 rgba(77, 232, 244, 0.9);
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 rgba(253, 62, 62, 0.9), -2px 3px 0 rgba(77, 232, 244, 0.9);
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .outerContainer {
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    height: 400px;
+                    
+                    animation: myRotationAnim 7.5s linear infinite reverse;
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 .outerOuterOuterContainer {
                     background: linear-gradient(
                         to bottom,
@@ -36,43 +109,15 @@
                     );
                 }
 
-                .outerContainer {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    width: 100%;
-                    height: 400px;
-                    
-                    animation: myRotationAnim 7.5s linear infinite reverse;
-                }
-
                 .blueInnerContainer, .whiteInnerContainer, .redInnerContainer {
                     font-family:
                         "Trebuchet MS",
                         "Courier New";
 
+                    color: white;
                     font-size: 45px;
                     letter-spacing: 8px;
-                    position: absolute;
                     text-align: center;
-                    
-                    animation: myScaling 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-                }
-                
-                .blueInnerContainer {
-                    color: rgba(77, 232, 244, 0.9);
-                    left: -5px;
-                }
-                
-                .whiteInnerContainer {
-                    color: white;
-                    z-index: 5;
-                }
-                
-                .redInnerContainer {
-                    color: rgba(253, 62, 62, 0.9);
-                    right: -5px;
                 }
 
                 @keyframes myScaling {
