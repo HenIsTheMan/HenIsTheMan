@@ -92,7 +92,9 @@
                     letter-spacing: 8px;
                     text-align: center;
                     
-                    animation: myRotationAnim 7.5s linear infinite reverse;
+                    animation:
+                        myRotationAnim 7.5s infinite reverse,
+                        myCircleClipPathAnim 0.75s;
                 }
 
                 .outerOuterContainer {
@@ -155,6 +157,18 @@
                     }
                     100% {
                         background-size: auto 4px;
+                    }
+                }
+                
+                @keyframes myCircleClipPathAnim {
+                    0% {
+                        clip-path: circle(10% at 40% 15.5%);
+                    }
+                    75% {
+                        clip-path: circle(90% at 40% 15.5%);
+                    }
+                    100% {
+                        clip-path: circle(100% at 40% 15.5%);
                     }
                 }
                 
