@@ -32,7 +32,7 @@
                         "Trebuchet MS",
                         "Courier New";
 
-                    font-size: 50px;
+                    font-size: 45px;
                     letter-spacing: 8px;
                     position: absolute;
                     text-align: center;
@@ -43,7 +43,6 @@
                 .blueInnerContainer {
                     color: rgba(77, 232, 244, 0.9);
                     left: -5px;
-                    <!--animation: myGlitchNoise 2200ms infinite steps(17, jump-both);-->
                 }
                 
                 .whiteInnerContainer {
@@ -54,7 +53,6 @@
                 .redInnerContainer {
                     color: rgba(253, 62, 62, 0.9);
                     right: -5px;
-                    <!--animation: myGlitchNoise 2700ms infinite steps(14, end) alternate-reverse;-->
                 }
 
                 @keyframes myScaling {
@@ -62,7 +60,7 @@
                         transform: scale(0.45);
                     }
                     100% {
-                        transform: scale(0.95);
+                        transform: scale(1);
                     }
                 }
 
@@ -75,72 +73,6 @@
                     }
                     100% {
                         background-size: 100% 4px
-                    }
-                }
-                
-                @keyframes myGlitchNoise {
-                    0% {
-                        clip: rect(7px, 9999px, 14px, 0);
-                    }
-                    5% {
-                        clip: rect(88px, 9999px, 33px, 0);
-                    }
-                    10% {
-                        clip: rect(49px, 9999px, 2px, 0);
-                    }
-                    15% {
-                        clip: rect(65px, 9999px, 63px, 0);
-                    }
-                    20% {
-                        clip: rect(83px, 9999px, 35px, 0);
-                    }
-                    25% {
-                        clip: rect(87px, 9999px, 5px, 0);
-                    }
-                    30% {
-                        clip: rect(64px, 9999px, 71px, 0);
-                    }
-                    35% {
-                        clip: rect(22px, 9999px, 19px, 0);
-                    }
-                    40% {
-                        clip: rect(69px, 9999px, 100px, 0);
-                    }
-                    45% {
-                        clip: rect(7px, 9999px, 89px, 0);
-                    }
-                    50% {
-                        clip: rect(31px, 9999px, 11px, 0);
-                    }
-                    55% {
-                        clip: rect(79px, 9999px, 98px, 0);
-                    }
-                    60% {
-                        clip: rect(24px, 9999px, 30px, 0);
-                    }
-                    65% {
-                        clip: rect(40px, 9999px, 54px, 0);
-                    }
-                    70% {
-                        clip: rect(86px, 9999px, 28px, 0);
-                    }
-                    75% {
-                        clip: rect(10px, 9999px, 45px, 0);
-                    }
-                    80% {
-                        clip: rect(62px, 9999px, 61px, 0);
-                    }
-                    85% {
-                        clip: rect(22px, 9999px, 39px, 0);
-                    }
-                    90% {
-                        clip: rect(73px, 9999px, 42px, 0);
-                    }
-                    95% {
-                        clip: rect(42px, 9999px, 87px, 0);
-                    }
-                    100% {
-                        clip: rect(93px, 9999px, 84px, 0);
                     }
                 }
             </style>
