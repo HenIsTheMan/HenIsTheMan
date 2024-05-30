@@ -1,7 +1,5 @@
 # HenIsTheMan, isn't he?
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/HenIsTheMan/HenIsTheMan)
-
 ### 📽📽 Past
 <p align = "center">
     <a href = "https://github.com/HenIsTheMan/HenIsTheMan">
@@ -57,5 +55,6 @@
     </a>
 </details>
 
-### 🏆🏆 Trophies
-[![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=4&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/HenIsTheMan/HenIsTheMan)
+✨ Featured ✨ | 🏆 Trophies 🏆
+:-:|:-:
+[![RepoCard](https://github-readme-stats.vercel.app/api/pin/?username=HenIsTheMan&repo=HenIsTheMan&show_owner=true&title_color=b19cd9&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)](https://github.com/HenIsTheMan/HenIsTheMan) | [![Trophies](https://github-profile-trophy.vercel.app/?username=HenIsTheMan&theme=dracula&margin-w=5&row=1&col=0&no-bg=false&no-frame=false)](https://github.com/HenIsTheMan/HenIsTheMan)
