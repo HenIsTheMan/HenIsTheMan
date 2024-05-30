@@ -12,6 +12,10 @@
             </div>
             
 			<style>
+                svg {
+                    border-radius: 10px;
+                }
+                
                 .outerContainer div:nth-child(1) {
                     color: transparent;
 
