@@ -51,7 +51,9 @@
 	</p>
 </details>
 
-<h6></h6>
+<hr>
+
+<br>
 
 <a href="https://github.com/HenIsTheMan?tab=stars"><img width=100% src="Imgs/Persona.webp"></a>
 
