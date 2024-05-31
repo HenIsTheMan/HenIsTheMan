@@ -55,7 +55,7 @@
 
 <br>
 
-<a href="https://github.com/HenIsTheMan?tab=stars"><img width=100% src="Imgs/Persona.webp"></a>
+<kbd><a href="https://github.com/HenIsTheMan?tab=stars"><img src="Imgs/AEJ.webp"></a></kbd>
 
 <h4 align="center">${\large\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J}$</h4>
 
