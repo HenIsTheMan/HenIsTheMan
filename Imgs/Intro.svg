@@ -71,12 +71,10 @@
 
 				.outerOuterContainer {
 					background: radial-gradient(
-						color-mix(
-							in oklab,
-							rgba(77, 232, 244, 0.45),
-							rgba(253, 62, 62, 0.45)
-						) 0%,
-						transparent 85%
+						rgba(255, 182, 193, 0.4) 25%,
+						rgba(135, 206, 235, 0.4) 50%,
+						rgba(170, 119, 238, 0.4) 70%,
+						transparent 90%
 					);
 				}
 				
