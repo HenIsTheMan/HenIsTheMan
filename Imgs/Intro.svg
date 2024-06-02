@@ -1,14 +1,16 @@
 <svg viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
-			<div class="outerOuterOuterContainer">
-				<div class="outerOuterContainer">
-					<div class="outerContainer">
-						<div>Welcome To HenIsTheMan's GitHub!</div>
-						<div>Welcome To HenIsTheMan's GitHub!</div>
-						<div>Welcome To HenIsTheMan's GitHub!</div>
-					</div>
+			<div class="outerOuterContainer">
+				<div class="outerContainer">
+					<div>Welcome To HenIsTheMan's GitHub!</div>
+					<div>Welcome To HenIsTheMan's GitHub!</div>
+					<div>Welcome To HenIsTheMan's GitHub!</div>
 				</div>
+			</div>
+			<div class="leftPartOfVignette">
+			</div>
+			<div class="rightPartOfVignette">
 			</div>
 			
 			<style>
@@ -68,17 +70,10 @@
 						myRotatingStarburstAnim 7.5s infinite reverse,
 						myCircleClipPathAnim 0.75s;
 				}
-
-				.outerOuterContainer {
-					background: radial-gradient(
-						rgba(255, 182, 193, 0.4) 25%,
-						rgba(135, 206, 235, 0.4) 50%,
-						rgba(170, 119, 238, 0.4) 70%,
-						transparent 90%
-					);
-				}
 				
-				.outerOuterOuterContainer {
+				.outerOuterContainer {
+					position: absolute;
+					
 					background: linear-gradient(
 						to bottom,
 						black,
@@ -89,6 +84,34 @@
 					);
 					
 					animation: myBgSizeAnim 250ms ease infinite;
+				}
+
+				.leftPartOfVignette {
+					width: 400px;
+					height: 400px;
+					
+					background: radial-gradient(
+						transparent 70%,
+						#282828 95%,
+						#20202077 100%
+					);
+
+					clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
+					float: left;
+				}
+				
+				.rightPartOfVignette {
+					width: 400px;
+					height: 400px;
+					
+					background: radial-gradient(
+						transparent 70%,
+						#282828 95%,
+						#20202077 100%
+					);
+
+					clip-path: polygon(50% 100%, 50% 0%, 100% 0%, 100% 100%);
+					float: right;
 				}
 				
 				@keyframes myOpacityAnim {
@@ -247,21 +270,21 @@
 				}
 				
 				<!--
-                - Val Remapping: 1 + ($i - 1) * (270 - 1) / ($steps - 1)
-                - Adjust 22.5deg to influence number of rays
-                - Test repeating-conic-gradient() separately to see the intended effect
-                
+				- Val Remapping: 1 + ($i - 1) * (270 - 1) / ($steps - 1)
+				- Adjust 22.5deg to influence number of rays
+				- Test repeating-conic-gradient() separately to see the intended effect
+				
 				@keyframes myRotatingStarburstAnim {
 					$steps: 1440;
 					@for $i from 1 through $steps {
 						#{round(percentage($i * (1 / $steps)) * 100) / 100} {
 							background: repeating-conic-gradient(
 								from 1 + ($i - 1) * (270 - 1) / ($steps - 1) + deg at 74.05% 33.2%,
-            					rgba(0, 0, 0, 0.4) 0deg 2.5deg,
-            					rgba(170, 119, 238, 0.55) 5deg 7.5deg,
-            					rgba(135, 206, 235, 0.5) 10deg 12.5deg,
-            					rgba(255, 182, 193, 0.45) 15deg 17.5deg,
-            					rgba(0, 0, 0, 0.4) 20deg 22.5deg
+								rgba(0, 0, 0, 0.4) 0deg 2.5deg,
+								rgba(170, 119, 238, 0.55) 5deg 7.5deg,
+								rgba(135, 206, 235, 0.5) 10deg 12.5deg,
+								rgba(255, 182, 193, 0.45) 15deg 17.5deg,
+								rgba(0, 0, 0, 0.4) 20deg 22.5deg
 							);
 						}
 					}
