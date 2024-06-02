@@ -28,6 +28,9 @@
 				}
 				
 				.outerContainer div:nth-child(2) {
+					-webkit-text-stroke-width: 2px;
+					-webkit-text-stroke-color: black;
+                
 					animation:
 						myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
 						myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
@@ -35,6 +38,9 @@
 				}
 				
 				.outerContainer div:nth-child(3) {
+					-webkit-text-stroke-width: 2px;
+					-webkit-text-stroke-color: black;
+                
 					animation:
 						myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
 						myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
