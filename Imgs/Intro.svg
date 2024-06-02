@@ -52,7 +52,7 @@
 
 				.outerContainer {
 					display: grid;
-					grid-template-columns: 1fr; <!--1 col grid-->
+					grid-template-columns: 1fr; <!-- 1 col grid -->
 
 					height: 400px;
 					
@@ -74,15 +74,31 @@
 				.outerOuterContainer {
 					position: absolute;
 					
-					background: linear-gradient(
-						to bottom,
-						black,
-						black 60%,
-						#333 60%,
-						#333 90%,
-						rgba(114, 114, 114, 1)
-					);
+					background-image:
+						<!-- Concentric Circles with "bloom" effect -->
+						radial-gradient(
+							circle at 74.05% 33.2%,
+							rgba(255, 182, 193, 0.2) 20%,
+							rgba(255, 182, 193, 0.85) 25%,
+							rgba(255, 182, 193, 0.2) 30%,
+							rgba(135, 206, 235, 0.2) 40%,
+							rgba(135, 206, 235, 0.85) 45%,
+							rgba(135, 206, 235, 0.2) 50%,
+							rgba(170, 119, 238, 0.2) 60%,
+							rgba(170, 119, 238, 0.85) 65%,
+							rgba(170, 119, 238, 0.2) 70%
+						),
+                        <!-- Part of Horiz Static Noise effect -->
+						linear-gradient(
+							to bottom,
+							black,
+							black 45.5%,
+							#888 55%,
+							#888 70%,
+							gray
+						);
 					
+                    <!-- Part of Horiz Static Noise effect -->
 					animation: myBgSizeAnim 250ms ease infinite;
 				}
 
@@ -90,11 +106,12 @@
 					width: 400px;
 					height: 400px;
 					
-					background: radial-gradient(
-						transparent 70%,
-						#282828 95%,
-						#20202077 100%
-					);
+					background:
+						radial-gradient(
+							transparent 70%,
+							#282828 95%,
+							#20202077
+						);
 
 					clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
 					float: left;
@@ -104,11 +121,12 @@
 					width: 400px;
 					height: 400px;
 					
-					background: radial-gradient(
-						transparent 70%,
-						#282828 95%,
-						#20202077 100%
-					);
+					background:
+						radial-gradient(
+							transparent 70%,
+							#282828 95%,
+							#20202077
+						);
 
 					clip-path: polygon(50% 100%, 50% 0%, 100% 0%, 100% 100%);
 					float: right;
@@ -132,20 +150,21 @@
 					}
 				}
 
+				<!-- 1st auto is for radial-gradient -->
 				@keyframes myBgSizeAnim {
 					0%,
 					100% {
-						background-size: auto 4px;
+						background-size: auto, auto 1%;
 					}
 					20%,
 					60% {
-						background-size: auto 2px;
+						background-size: auto, auto 0.85%;
 					}
 					40% {
-						background-size: auto 5px;
+						background-size: auto, auto 0.95%;
 					}
 					80% {
-						background-size: auto 3px;
+						background-size: auto, auto 0.75%;
 					}
 				}
 				
