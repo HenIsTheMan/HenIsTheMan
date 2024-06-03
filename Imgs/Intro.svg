@@ -3,8 +3,24 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<div id="outerOuterContainer">
 				<div id="outerContainer">
-					<div>Welcome To HenIsTheMan's GitHub!</div>
-					<div>Welcome To HenIsTheMan's GitHub!</div>
+                    <div id="innerContainer">
+                        <div>
+                            <span class="pinkText">Welcome </span>
+                            <span class="pinkText">To</span>
+                            <br/>
+                            <span class="blueText">HenIsTheMan's</span>
+                            <br/>
+                            <span class="purpleText">GitHub!</span>
+                        </div>
+                        <div>
+                            <span class="pinkText">Welcome </span>
+                            <span class="pinkText">To</span>
+                            <br/>
+                            <span class="blueText">HenIsTheMan's</span>
+                            <br/>
+                            <span class="purpleText">GitHub!</span>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div id="leftPartOfVignette">
@@ -26,8 +42,9 @@
                 }
                 
 				#outerOuterContainer {
-					height: 100%;
 					position: absolute;
+                    width: 100%;
+					height: 100%;
 					
 					background-image:
 						<!-- Concentric Circles with "bloom" effect -->
@@ -58,8 +75,19 @@
 				}
                 
                 #outerContainer {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
 					height: 100%;
-					display: grid;
+                
+					animation:
+						myCircleClipPathAnim 0.75s,
+						myRotatingStarburstAnim 7.5s infinite reverse;
+				}
+                
+                #innerContainer {
+                	display: grid;
 					grid-template-columns: 1fr; <!-- 1 col grid -->
 
 					font-family:
@@ -71,22 +99,16 @@
 					font-weight: bold;
 					letter-spacing: 8px;
 					text-align: center;
-					
-					animation:
-						myCircleClipPathAnim 0.75s,
-						myRotatingStarburstAnim 7.5s infinite reverse;
-				}
+                }
                 
-                #outerContainer div {
+                #innerContainer div {
 					grid-column-start: 1;
 					grid-row-start: 1;
 					
-					display: flex;
-					align-items: center;
-					justify-content: center;
+					display: inline-block;
 				}
-				
-				#outerContainer div:nth-child(1) {
+                
+				#innerContainer div:nth-child(1) {
 					-webkit-text-stroke-width: 2px;
 					-webkit-text-stroke-color: black;
 				
@@ -96,7 +118,7 @@
 						myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
 				}
 				
-				#outerContainer div:nth-child(2) {
+				#innerContainer div:nth-child(2) {
 					-webkit-text-stroke-width: 2px;
 					-webkit-text-stroke-color: black;
 				
