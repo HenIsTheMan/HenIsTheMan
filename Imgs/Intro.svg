@@ -1,4 +1,4 @@
-<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject>
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<div id="outerOuterContainer">
@@ -23,20 +23,17 @@
                     </div>
 				</div>
 			</div>
-			<div id="leftPartOfVignette">
+            <div style="display: flex;"> <!-- Need display: flex; for float: right; to work properly -->
+				<div id="leftPartOfVignette">
+				</div>
+				<div id="rightPartOfVignette">
+				</div>
 			</div>
-			<div id="rightPartOfVignette">
-			</div>
-			
-			<style>
-				svg {
-                    width: 800px;
-                    height: 400px;
-				}
                 
-                foreignObject {
-					border: 2px solid #AA77EE;
-                    border-radius: 10px;
+			<style>
+				foreignObject {
+					border: 5px solid #A7E;
+					border-radius: 20px;
 					width: 100%;
 					height: 100%;
                 }
@@ -90,14 +87,10 @@
                 	display: grid;
 					grid-template-columns: 1fr; <!-- 1 col grid -->
 
-					font-family:
-						"Trebuchet MS",
-						"Courier New";
-
 					color: white;
-					font-size: 4rem;
-					font-weight: bold;
-					letter-spacing: 8px;
+                    font: 750 7.5rem "Helvetica"; <!-- Since must be this for origin of Rotating Starburst to fit exactly -->
+					letter-spacing: 2px;
+                    line-height: 1.2;
 					text-align: center;
                 }
                 
@@ -109,8 +102,8 @@
 				}
                 
 				#innerContainer div:nth-child(1) {
-					-webkit-text-stroke-width: 2px;
-					-webkit-text-stroke-color: black;
+					-webkit-text-stroke-width: 4px;
+					-webkit-text-stroke-color: #282828;
 				
 					animation:
 						myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
@@ -119,8 +112,8 @@
 				}
 				
 				#innerContainer div:nth-child(2) {
-					-webkit-text-stroke-width: 2px;
-					-webkit-text-stroke-color: black;
+					-webkit-text-stroke-width: 4px;
+					-webkit-text-stroke-color: #282828;
 				
 					animation:
 						myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
@@ -129,8 +122,8 @@
 				}
 
 				#leftPartOfVignette {
-					width: 400px;
-					height: 400px;
+					width: 700px;
+					height: 700px;
 					
 					background:
 						radial-gradient(
@@ -140,12 +133,12 @@
 						);
 
 					clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
-					float: left; <!-- transform: translateX(-400px); makes it disappear -->
+					float: left;
 				}
 				
 				#rightPartOfVignette {
-					width: 400px;
-					height: 400px;
+					width: 700px;
+					height: 700px;
 					
 					background:
 						radial-gradient(
@@ -155,7 +148,7 @@
 						);
 
 					clip-path: polygon(50% 100%, 50% 0%, 100% 0%, 100% 100%);
-					transform: translateX(400px); <!-- Cannot use float: right; due to border -->
+					float: right;
 				}
 				
 				@keyframes myOpacityAnim {
