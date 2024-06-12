@@ -19,6 +19,9 @@
 				}
 				
 				#container {
+					border-bottom: 4px ridge #A7E;
+					text-shadow: 3px -2px 2px #A7E;
+
 					font: 550 4.25rem "Georgia";
 					letter-spacing: 2px;
 					text-align: center;
