@@ -141,8 +141,8 @@
 					
 					background:
 						radial-gradient(
-							transparent 75%,
-							#282828 95%,
+							transparent 81%,
+							#282828 92.75%,
 							#202020
 						);
 
@@ -156,8 +156,8 @@
 					
 					background:
 						radial-gradient(
-							transparent 75%,
-							#282828 95%,
+							transparent 81%,
+							#282828 92.75%,
 							#202020
 						);
 
