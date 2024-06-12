@@ -1,4 +1,4 @@
-<h1 align="center">$\Huge\color{lightpink}\bf HenIsTheMan, \thinspace \color{skyblue} isn't \space he?$</h1>
+<h1 align="center"><h1 align="center">$\Huge\color{lightpink}\bf HenIsTheMan, \thinspace \color{skyblue} isn't \space he?$</h1></h1>
 
 <h6></h6>
 
@@ -47,6 +47,9 @@
 
 <kbd><a href="https://github.com/HenIsTheMan?tab=stars"><img src="Imgs/AEJ.webp"></a></kbd>
 
-<h4 align="center">$\large\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J$</h4>
+<h4 align="center"><kbd>$\LARGE\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J$</kbd></h4>
 
-<p align="center">$\normalsize\tt\color{rgb(100, 100, 100)} A \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract$</p>
+<p align="center">$\tt\color{rgb(100, 100, 100)}
+	\scriptsize\textcopyright\normalsize \space HenIsTheMan \space\thinspace
+	(A \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract)
+$</p>
