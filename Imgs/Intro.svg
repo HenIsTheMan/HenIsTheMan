@@ -90,7 +90,6 @@
 					display: grid;
 					grid-template-columns: 1fr; <!-- 1 col grid -->
 
-					color: white;
 					font: 750 7.5rem "Helvetica"; <!-- Since must be this for origin of Rotating Starburst to fit exactly -->
 					letter-spacing: 2px;
 					line-height: 1.2;
@@ -122,6 +121,18 @@
 						myOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.75s backwards,
 						myScaleAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s backwards,
 						myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
+				}
+				
+				#innerContainer div > .pinkText {
+					color: rgb(255, 182, 193);
+				}
+				
+				#innerContainer div > .blueText {
+					color: rgb(135, 206, 235);
+				}
+				
+				#innerContainer div > .purpleText {
+					color: rgb(170, 119, 238);
 				}
 
 				#leftPartOfVignette {
