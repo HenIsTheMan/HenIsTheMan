@@ -19,19 +19,26 @@
 				}
 				
 				#container {
-					border-bottom: 4px ridge #A7E;
-					text-shadow: 3px -2px 2px #A7E;
+					text-shadow:
+						1px 1px 4px #A7E,
+						-1px -1px 4px #A7E,
+						1px -1px 4px #A7E,
+						-1px 1px 4px #A7E,
+						0px 0px 5px #A7E,
+						0px 0px 6px #A7E,
+						0px 0px 7px #A7E,
+						0px 0px 8px #A7E;
 
 					font: 550 4.25rem "Georgia";
-					letter-spacing: 2px;
+					letter-spacing: 0.2rem;
 					text-align: center;
 				}
 				
-				.pinkText {
+				#container .pinkText {
 					color: rgb(255, 182, 193);
 				}
 				
-				.blueText {
+				#container .blueText {
 					color: rgb(135, 206, 235);
 				}
 			</style>
