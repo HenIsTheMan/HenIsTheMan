@@ -1,10 +1,8 @@
-<h1 align="center"><h1 align="center">$\Huge\color{lightpink}\bf HenIsTheMan, \thinspace \color{skyblue} isn't \space he?$</h1></h1>
+<a href="https://github.com/HenIsTheMan?tab=stars"><img src="Imgs/Heading.svg"></a>
 
-<h6></h6>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="Imgs/Intro.svg"></a>
 
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img width=100% src="Imgs/Intro.svg"></a>
-
-<h1 align="center"><samp>🖥️ $\large\color{#AA77EE}\oldstyle \negthinspace Coding/Programming \negthinspace$ 🖥️</samp></h1>
+<h1 align="center">🖥️ $\huge\color{#AA77EE}\oldstyle \negthinspace Coding/Programming \negthinspace$ 🖥️</samp></h1>
 <details open>
 	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖</summary>
 	<p></p>
@@ -49,7 +47,8 @@
 
 <h4 align="center"><kbd>$\LARGE\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J$</kbd></h4>
 
+<p align="center"><samp>A contract is a contract is a contract</samp></p>
+
 <p align="center">$\tt\color{rgb(100, 100, 100)}
-	\scriptsize\textcopyright\normalsize \space HenIsTheMan \space\thinspace
-	(A \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract)
+	\scriptsize\textcopyright \space \normalsize HenIsTheMan
 $</p>
