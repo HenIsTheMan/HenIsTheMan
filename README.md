@@ -1,10 +1,10 @@
-<h1 align="center">${\Huge\color{lightpink}\bf HenIsTheMan, \thinspace \color{skyblue} isn't \space he?}$</h1>
+<h1 align="center">$\Huge\color{lightpink}\bf HenIsTheMan, \thinspace \color{skyblue} isn't \space he?$</h1>
 
 <h6></h6>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img width=100% src="Imgs/Intro.svg"></a>
 
-<h1 align="center"><samp>🖥️ ${\large\color{#AA77EE}\oldstyle \negthinspace Coding/Programming \negthinspace}$ 🖥️</samp></h1>
+<h1 align="center"><samp>🖥️ $\large\color{#AA77EE}\oldstyle \negthinspace Coding/Programming \negthinspace$ 🖥️</samp></h1>
 <details open>
 	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖</summary>
 	<p></p>
@@ -47,6 +47,6 @@
 
 <kbd><a href="https://github.com/HenIsTheMan?tab=stars"><img src="Imgs/AEJ.webp"></a></kbd>
 
-<h4 align="center">${\large\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J}$</h4>
+<h4 align="center">$\large\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J$</h4>
 
-<p align="center">${\normalsize\tt\color{rgb(100, 100, 100)} A \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract}$</p>
+<p align="center">$\normalsize\tt\color{rgb(100, 100, 100)} A \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract \space\thinspace is \space\thinspace a \space\thinspace contract$</p>
