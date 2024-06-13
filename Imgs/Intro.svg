@@ -81,9 +81,7 @@
 
 					height: 100%;
 				
-					animation:
-						myCircleClipPathAnim 0.75s,
-						myRotatingStarburstAnim 7.5s infinite reverse;
+					animation: myRotatingStarburstAnim 7.5s infinite reverse;
 				}
 				
 				#innerContainer {
@@ -180,18 +178,6 @@
 					}
 					100% {
 						transform: scale(1);
-					}
-				}
-				
-				@keyframes myCircleClipPathAnim {
-					0% {
-						clip-path: circle(10% at 40% 15.5%);
-					}
-					75% {
-						clip-path: circle(90% at 40% 15.5%);
-					}
-					100% {
-						clip-path: circle(100% at 40% 15.5%);
 					}
 				}
 
