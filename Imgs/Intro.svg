@@ -5,20 +5,20 @@
 				<div id="outerContainer">
 					<div id="innerContainer">
 						<div>
-							<span class="pinkText">Welcome </span>
-							<span class="pinkText">To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
-							<span class="blueText">HenIsTheMan's</span>
+							<span>HenIsTheMan's</span>
 							<br/>
-							<span class="purpleText">GitHub!</span>
+							<span>GitHub!</span>
 						</div>
 						<div>
-							<span class="pinkText">Welcome </span>
-							<span class="pinkText">To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
-							<span class="blueText">HenIsTheMan's</span>
+							<span>HenIsTheMan's</span>
 							<br/>
-							<span class="purpleText">GitHub!</span>
+							<span>GitHub!</span>
 						</div>
 					</div>
 				</div>
@@ -92,19 +92,40 @@
 					letter-spacing: 2px;
 					line-height: 1.2;
 					text-align: center;
+
+					-webkit-text-stroke-width: 4px;
+					-webkit-text-stroke-color: #282828;
 				}
 				
 				#innerContainer div {
+					display: inline-block;
+				
 					grid-column-start: 1;
 					grid-row-start: 1;
-					
-					display: inline-block;
+                    
+                    background: linear-gradient(
+						-45deg,
+						rgb(255, 182, 193),
+						rgb(135, 206, 235),
+						rgb(170, 119, 238),
+						rgb(255, 182, 193),
+						rgb(135, 206, 235),
+						rgb(170, 119, 238),
+						rgb(255, 182, 193),
+						rgb(135, 206, 235),
+						rgb(170, 119, 238),
+						rgb(255, 182, 193),
+						rgb(135, 206, 235),
+						rgb(170, 119, 238),
+						rgb(255, 182, 193),
+						rgb(135, 206, 235),
+						rgb(170, 119, 238)
+					);
+                    background-clip: text;
+                    color: transparent;
 				}
 				
 				#innerContainer div:nth-child(1) {
-					-webkit-text-stroke-width: 4px;
-					-webkit-text-stroke-color: #282828;
-				
 					animation:
 						myEntryOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.77s backwards,
 						myEntryTransformAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.89s backwards,
@@ -112,25 +133,10 @@
 				}
 				
 				#innerContainer div:nth-child(2) {
-					-webkit-text-stroke-width: 4px;
-					-webkit-text-stroke-color: #282828;
-				
 					animation:
 						myEntryOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.77s backwards,
 						myEntryTransformAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.89s backwards,
 						myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
-				}
-				
-				#innerContainer div > .pinkText {
-					color: rgb(255, 182, 193);
-				}
-				
-				#innerContainer div > .blueText {
-					color: rgb(135, 206, 235);
-				}
-				
-				#innerContainer div > .purpleText {
-					color: rgb(170, 119, 238);
 				}
 
 				#leftPartOfVignette {
