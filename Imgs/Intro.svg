@@ -5,21 +5,33 @@
 				<div id="outerContainer">
 					<div id="innerContainer">
 						<div>
-							<span>Welcome </span>
-							<span>To</span>
+							<span>Welcome To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
 							<span>GitHub!</span>
 						</div>
 						<div>
-							<span>Welcome </span>
-							<span>To</span>
+							<span>Welcome To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
 							<span>GitHub!</span>
 						</div>
+                        <div>
+                            <span>Welcome To</span>
+                            <br/>
+                            <span>HenIsTheMan's</span>
+                            <br/>
+                            <span>GitHub!</span>
+                        </div>
+                        <div>
+                            <span>Welcome To</span>
+                            <br/>
+                            <span>HenIsTheMan's</span>
+                            <br/>
+                            <span>GitHub!</span>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -49,7 +61,7 @@
 						rgb(170, 119, 238),
 						rgb(135, 206, 235),
 						rgb(255, 182, 193),
-                        rgb(170, 119, 238),
+						rgb(170, 119, 238),
 						rgb(135, 206, 235),
 						rgb(255, 182, 193),
 						rgb(170, 119, 238),
@@ -66,8 +78,8 @@
 						rgb(255, 182, 193)
 					);
 					background-clip: border-box;
-                    background-size: 125% 125%; <!-- To hide hard edges at the corners -->
-                    background-position-y: 40%; <!-- To hide hard edges at the corners -->
+					background-size: 125% 125%; <!-- To hide hard edges at the corners -->
+					background-position-y: 40%; <!-- To hide hard edges at the corners -->
 				
 					border: 5px solid transparent;
 					border-radius: 20px;
@@ -130,9 +142,6 @@
 					letter-spacing: 2px;
 					line-height: 1.2;
 					text-align: center;
-
-					-webkit-text-stroke-width: 4px;
-					-webkit-text-stroke-color: #282828;
 				}
 				
 				#innerContainer div {
@@ -140,7 +149,9 @@
 				
 					grid-column-start: 1;
 					grid-row-start: 1;
-					
+				}
+                
+                #innerContainer div:nth-child(-n + 2) { <!-- 1st 2 #innerContainer div -->
 					background: linear-gradient(
 						-45deg,
 						rgb(255, 182, 193),
@@ -161,16 +172,23 @@
 					);
 					background-clip: text;
 					color: transparent;
-				}
+                }
+                
+                #innerContainer div:nth-child(n + 3) { <!-- 3rd #innerContainer div onwards -->
+					color: transparent;
+                
+					-webkit-text-stroke-width: 4px;
+					-webkit-text-stroke-color: #282828;
+                }
 				
-				#innerContainer div:nth-child(1) {
+				#innerContainer div:nth-child(odd) {
 					animation:
 						myEntryOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.77s backwards,
 						myEntryTransformAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.89s backwards,
 						myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
 				}
 				
-				#innerContainer div:nth-child(2) {
+				#innerContainer div:nth-child(even) {
 					animation:
 						myEntryOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.77s backwards,
 						myEntryTransformAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.89s backwards,
