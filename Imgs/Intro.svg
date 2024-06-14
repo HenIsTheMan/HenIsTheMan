@@ -32,8 +32,46 @@
 				
 			<style>
 				foreignObject {
-					border: 5px solid #A7E;
+					background: linear-gradient(
+						70deg,
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+                        rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193),
+						rgb(170, 119, 238),
+						rgb(135, 206, 235),
+						rgb(255, 182, 193)
+					);
+					background-clip: border-box;
+                    background-size: 125% 125%; <!-- To hide hard edges at the corners -->
+                    background-position-y: 40%; <!-- To hide hard edges at the corners -->
+				
+					border: 5px solid transparent;
 					border-radius: 20px;
+
 					width: 100%;
 					height: 100%;
 				}
@@ -102,8 +140,8 @@
 				
 					grid-column-start: 1;
 					grid-row-start: 1;
-                    
-                    background: linear-gradient(
+					
+					background: linear-gradient(
 						-45deg,
 						rgb(255, 182, 193),
 						rgb(135, 206, 235),
@@ -121,8 +159,8 @@
 						rgb(135, 206, 235),
 						rgb(170, 119, 238)
 					);
-                    background-clip: text;
-                    color: transparent;
+					background-clip: text;
+					color: transparent;
 				}
 				
 				#innerContainer div:nth-child(1) {
