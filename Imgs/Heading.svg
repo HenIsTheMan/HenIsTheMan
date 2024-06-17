@@ -2,8 +2,8 @@
 	<foreignObject>
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<div id="container">
-				<span class="pinkText">HenIsTheMan, </span>
-				<span class="blueText">isn't he?</span>
+				<span class="pinkBloomPurpleGlowText">HenIsTheMan, </span>
+				<span class="blueBloomPurpleGlowText">isn't he?</span>
 			</div>
 				
 			<style>
@@ -19,27 +19,38 @@
 				}
 				
 				#container {
-					text-shadow:
-						1px 1px 4px #A7E,
-						-1px -1px 4px #A7E,
-						1px -1px 4px #A7E,
-						-1px 1px 4px #A7E,
-						0px 0px 5px #A7E,
-						0px 0px 6px #A7E,
-						0px 0px 7px #A7E,
-						0px 0px 8px #A7E;
-
-					font: 550 4.25rem "Georgia";
+					color: white;
+					font: 550 4.45rem "Georgia";
 					letter-spacing: 0.2rem;
 					text-align: center;
 				}
 				
-				#container .pinkText {
-					color: rgb(255, 182, 193);
+				#container .pinkBloomPurpleGlowText {
+					text-shadow:
+						1px 1px 4px rgb(255, 182, 193),
+						-1px -1px 4px rgb(255, 182, 193),
+						1px -1px 4px rgb(255, 182, 193),
+						-1px 1px 4px rgb(255, 182, 193),
+						0px 0px 5px #A7E,
+						0px 0px 6px #A7E,
+						0px 0px 7px #A7E,
+						0px 0px 8px #A7E,
+						0px 0px 9px #A7E,
+						0px 0px 10px #A7E;
 				}
 				
-				#container .blueText {
-					color: rgb(135, 206, 235);
+				#container .blueBloomPurpleGlowText {
+					text-shadow:
+						1px 1px 4px rgb(135, 206, 235),
+						-1px -1px 4px rgb(135, 206, 235),
+						1px -1px 4px rgb(135, 206, 235),
+						-1px 1px 4px rgb(135, 206, 235),
+						0px 0px 5px #A7E,
+						0px 0px 6px #A7E,
+						0px 0px 7px #A7E,
+						0px 0px 8px #A7E,
+						0px 0px 9px #A7E,
+						0px 0px 10px #A7E;
 				}
 			</style>
 		</div>
