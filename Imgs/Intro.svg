@@ -5,28 +5,32 @@
 				<div id="outerContainer">
 					<div id="innerContainer">
 						<div>
-							<span>Welcome To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
 							<span>GitHub!</span>
 						</div>
 						<div>
-							<span>Welcome To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
 							<span>GitHub!</span>
 						</div>
 						<div>
-							<span>Welcome To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
 							<span>GitHub!</span>
 						</div>
 						<div>
-							<span>Welcome To</span>
+							<span>Welcome </span>
+							<span>To</span>
 							<br/>
 							<span>HenIsTheMan's</span>
 							<br/>
@@ -186,9 +190,13 @@
 				}
 				
 				#innerContainer div:nth-child(-n + 2) span { <!-- 1st 2 #innerContainer div and... -->
+                	--switch-interval: 0.45s;
+					--fixed-duration: calc(var(--switch-interval) * 16);
+					--main-delay: calc(0.89s + 0.99s);
+                
 					<!-- Initial gradient before anims start -->
 					background: repeating-linear-gradient(
-						-45deg,
+						0deg,
 						rgb(255, 182, 193),
 						rgb(135, 206, 235) 5.5%,
 						rgb(170, 119, 238) 11%,
@@ -196,43 +204,55 @@
 					);
 					
 					background-clip: text;
-					
-					--main-delay: calc(0.89s + 0.99s);
-					--interval: 0.4s;
+                    background-size: 400px 400px; <!-- Keeps gradient consistent across all spans regardless of txt -->
 					
 					animation-name:
 						txtStencilGradientSwitchAnim0,
 						txtStencilGradientSwitchAnim1,
-						txtStencilGradientSwitchAnim2;
+						txtStencilGradientSwitchAnim2,
+						txtStencilGradientSwitchAnim3;
 					animation-iteration-count:
+						infinite,
 						infinite,
 						infinite,
 						infinite;
 					animation-duration:
-						calc(var(--interval) * 9),
-						calc(var(--interval) * 9),
-						calc(var(--interval) * 9);
+						var(--fixed-duration),
+						var(--fixed-duration),
+						var(--fixed-duration),
+						var(--fixed-duration);
 				}
 				
 				#innerContainer div:nth-child(-n + 2) span:nth-child(1) {
 					animation-delay:
-						calc(var(--main-delay) + var(--interval)),
-						calc(var(--main-delay) + calc(var(--interval) * 4)),
-						calc(var(--main-delay) + calc(var(--interval) * 7));
+						calc(var(--main-delay) + var(--switch-interval)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 5)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 9)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 13));
 				}
 				
-				#innerContainer div:nth-child(-n + 2) span:nth-child(3) {
+				#innerContainer div:nth-child(-n + 2) span:nth-child(2) {
 					animation-delay:
-						calc(var(--main-delay) + calc(var(--interval) * 2)),
-						calc(var(--main-delay) + calc(var(--interval) * 5)),
-						calc(var(--main-delay) + calc(var(--interval) * 8));
+						calc(var(--main-delay) + calc(var(--switch-interval) * 2)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 6)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 10)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 14));
 				}
 				
-				#innerContainer div:nth-child(-n + 2) span:nth-child(5) {
+				#innerContainer div:nth-child(-n + 2) span:nth-child(4) {
 					animation-delay:
-						calc(var(--main-delay) + calc(var(--interval) * 3)),
-						calc(var(--main-delay) + calc(var(--interval) * 6)),
-						calc(var(--main-delay) + calc(var(--interval) * 9));
+						calc(var(--main-delay) + calc(var(--switch-interval) * 3)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 7)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 11)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 15));
+				}
+				
+				#innerContainer div:nth-child(-n + 2) span:nth-child(6) {
+					animation-delay:
+						calc(var(--main-delay) + calc(var(--switch-interval) * 4)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 8)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 12)),
+						calc(var(--main-delay) + calc(var(--switch-interval) * 16));
 				}
 
 				#leftPartOfVignette {
@@ -284,37 +304,9 @@
 				}
 				
 				@keyframes txtStencilGradientSwitchAnim0 {
-					11.11% {
+					6.25% {
 						background: repeating-linear-gradient(
-							-45deg,
-							rgb(135, 206, 235),
-							rgb(170, 119, 238) 5.5%,
-							rgb(255, 182, 193) 11%,
-							rgb(135, 206, 235) 16.5%
-						);
-						
-						background-clip: text;
-					}
-				}
-				
-				@keyframes txtStencilGradientSwitchAnim1 {
-					11.11% {
-						background: repeating-linear-gradient(
-							-45deg,
-							rgb(170, 119, 238),
-							rgb(255, 182, 193) 5.5%,
-							rgb(135, 206, 235) 11%,
-							rgb(170, 119, 238) 16.5%
-						);
-						
-						background-clip: text;
-					}
-				}
-				
-				@keyframes txtStencilGradientSwitchAnim2 {
-					11.11% {
-						background: repeating-linear-gradient(
-							-45deg,
+							90deg,
 							rgb(255, 182, 193),
 							rgb(135, 206, 235) 5.5%,
 							rgb(170, 119, 238) 11%,
@@ -322,6 +314,52 @@
 						);
 						
 						background-clip: text;
+                        background-size: 400px 400px;
+					}
+				}
+				
+				@keyframes txtStencilGradientSwitchAnim1 {
+					6.25% {
+						background: repeating-linear-gradient(
+							180deg,
+							rgb(255, 182, 193),
+							rgb(135, 206, 235) 5.5%,
+							rgb(170, 119, 238) 11%,
+							rgb(255, 182, 193) 16.5%
+						);
+						
+						background-clip: text;
+                        background-size: 400px 400px;
+					}
+				}
+				
+				@keyframes txtStencilGradientSwitchAnim2 {
+					6.25% {
+						background: repeating-linear-gradient(
+							270deg,
+							rgb(255, 182, 193),
+							rgb(135, 206, 235) 5.5%,
+							rgb(170, 119, 238) 11%,
+							rgb(255, 182, 193) 16.5%
+						);
+						
+						background-clip: text;
+                        background-size: 400px 400px;
+					}
+				}
+                
+                @keyframes txtStencilGradientSwitchAnim3 {
+					6.25% {
+						background: repeating-linear-gradient(
+							360deg,
+							rgb(255, 182, 193),
+							rgb(135, 206, 235) 5.5%,
+							rgb(170, 119, 238) 11%,
+							rgb(255, 182, 193) 16.5%
+						);
+						
+						background-clip: text;
+                        background-size: 400px 400px;
 					}
 				}
 
