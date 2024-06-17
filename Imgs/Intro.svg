@@ -78,8 +78,8 @@
 						rgb(255, 182, 193)
 					);
 					background-clip: border-box;
-                    
-                    <!-- To hide hard edges at the corners -->
+					
+					<!-- To hide hard edges at the corners -->
 					background-size: 110% 110%;
 					background-position: 25% 40%; <!-- background-position only works here -->
 
@@ -123,7 +123,10 @@
 						);
 					
 					<!-- Part of Horiz Static Noise effect -->
-					animation: myBgSizeAnim 250ms ease infinite;
+					animation-name: myBgSizeAnim;
+					animation-duration: 250ms;
+					animation-timing-function: ease;
+					animation-iteration-count: infinite;
 				}
 				
 				#outerContainer {
@@ -132,8 +135,11 @@
 					justify-content: center;
 
 					height: 100%;
-				
-					animation: myRotatingStarburstAnim 7.5s infinite reverse;
+
+					animation-name: myRotatingStarburstAnim;
+					animation-duration: 7.5s;
+					animation-iteration-count: infinite;
+					animation-direction: reverse;
 				}
 				
 				#innerContainer {
@@ -145,9 +151,11 @@
 					line-height: 1.2;
 					text-align: center;
 					
-					animation:
-						myEntryOpacityAnim 0.55s cubic-bezier(0.55, 0, 1, 0.45) 0.77s backwards,
-						myEntryTransformAnim 0.99s cubic-bezier(0.34, 1.56, 0.64, 1) 0.89s backwards;
+					animation-name: myEntryOpacityAnim, myEntryTransformAnim;
+					animation-delay: 0.77s, 0.89s;
+					animation-duration: 0.55s, 0.99s;
+					animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45), cubic-bezier(0.34, 1.56, 0.64, 1);
+					animation-fill-mode: backwards, backwards;
 				}
 				
 				#innerContainer div {
@@ -155,33 +163,76 @@
 				
 					grid-column-start: 1;
 					grid-row-start: 1;
-                    
-                    color: transparent;
+					
+					color: transparent;
+					
+					animation-delay: 1.85s;
+					animation-duration: 9.99s;
+					animation-iteration-count: infinite;
+					animation-direction: alternate-reverse;
 				}
 
 				#innerContainer div:nth-child(n + 3) { <!-- 3rd #innerContainer div onwards -->
 					-webkit-text-stroke-width: 4px;
 					-webkit-text-stroke-color: #282828;
 				}
-                
-                #innerContainer div:nth-child(1) {
-					animation:
-						txtStencilRigidGradientScrollAnim calc(0.99s + 0.89s) linear 0.7s infinite,
-						myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
+				
+				#innerContainer div:nth-child(odd) {
+					animation-name: myDistortionAnim0;
 				}
 				
-				#innerContainer div:nth-child(2) {
-					animation:
-						txtStencilRigidGradientScrollAnim calc(0.99s + 0.89s) linear 0.7s infinite,
-						myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
-				}
-                
-                #innerContainer div:nth-child(3) {
-					animation: myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
+				#innerContainer div:nth-child(even) {
+					animation-name: myDistortionAnim1;
 				}
 				
-				#innerContainer div:nth-child(4) {
-					animation: myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
+				#innerContainer div:nth-child(-n + 2) span { <!-- 1st 2 #innerContainer div and... -->
+					<!-- Initial gradient before anims start -->
+					background: repeating-linear-gradient(
+						-45deg,
+						rgb(255, 182, 193),
+						rgb(135, 206, 235) 5.5%,
+						rgb(170, 119, 238) 11%,
+						rgb(255, 182, 193) 16.5%
+					);
+					
+					background-clip: text;
+					
+					--main-delay: calc(0.89s + 0.99s);
+					--interval: 0.4s;
+					
+					animation-name:
+						txtStencilGradientSwitchAnim0,
+						txtStencilGradientSwitchAnim1,
+						txtStencilGradientSwitchAnim2;
+					animation-iteration-count:
+						infinite,
+						infinite,
+						infinite;
+					animation-duration:
+						calc(var(--interval) * 9),
+						calc(var(--interval) * 9),
+						calc(var(--interval) * 9);
+				}
+				
+				#innerContainer div:nth-child(-n + 2) span:nth-child(1) {
+					animation-delay:
+						calc(var(--main-delay) + var(--interval)),
+						calc(var(--main-delay) + calc(var(--interval) * 4)),
+						calc(var(--main-delay) + calc(var(--interval) * 7));
+				}
+				
+				#innerContainer div:nth-child(-n + 2) span:nth-child(3) {
+					animation-delay:
+						calc(var(--main-delay) + calc(var(--interval) * 2)),
+						calc(var(--main-delay) + calc(var(--interval) * 5)),
+						calc(var(--main-delay) + calc(var(--interval) * 8));
+				}
+				
+				#innerContainer div:nth-child(-n + 2) span:nth-child(5) {
+					animation-delay:
+						calc(var(--main-delay) + calc(var(--interval) * 3)),
+						calc(var(--main-delay) + calc(var(--interval) * 6)),
+						calc(var(--main-delay) + calc(var(--interval) * 9));
 				}
 
 				#leftPartOfVignette {
@@ -231,6 +282,48 @@
 						transform: scale(1);
 					}
 				}
+				
+				@keyframes txtStencilGradientSwitchAnim0 {
+					11.11% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(135, 206, 235),
+							rgb(170, 119, 238) 5.5%,
+							rgb(255, 182, 193) 11%,
+							rgb(135, 206, 235) 16.5%
+						);
+						
+						background-clip: text;
+					}
+				}
+				
+				@keyframes txtStencilGradientSwitchAnim1 {
+					11.11% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(170, 119, 238),
+							rgb(255, 182, 193) 5.5%,
+							rgb(135, 206, 235) 11%,
+							rgb(170, 119, 238) 16.5%
+						);
+						
+						background-clip: text;
+					}
+				}
+				
+				@keyframes txtStencilGradientSwitchAnim2 {
+					11.11% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(255, 182, 193),
+							rgb(135, 206, 235) 5.5%,
+							rgb(170, 119, 238) 11%,
+							rgb(255, 182, 193) 16.5%
+						);
+						
+						background-clip: text;
+					}
+				}
 
 				<!-- 1st auto is for radial-gradient -->
 				@keyframes myBgSizeAnim {
@@ -247,43 +340,6 @@
 					}
 					80% {
 						background-size: auto, auto 0.75%;
-					}
-				}
-				
-				@keyframes txtStencilRigidGradientScrollAnim {
-					0%,
-					100% {
-						background: repeating-linear-gradient(
-							-45deg,
-							rgb(255, 182, 193),
-							rgb(135, 206, 235) 5.5%,
-							rgb(170, 119, 238) 11%,
-							rgb(255, 182, 193) 16.5%
-						);
-						
-						background-clip: text;
-					}
-					33.3% {
-						background: repeating-linear-gradient(
-							-45deg,
-							rgb(135, 206, 235),
-							rgb(170, 119, 238) 5.5%,
-							rgb(255, 182, 193) 11%,
-							rgb(135, 206, 235) 16.5%
-						);
-						
-						background-clip: text;
-					}
-					66.7% {
-						background: repeating-linear-gradient(
-							-45deg,
-							rgb(170, 119, 238),
-							rgb(255, 182, 193) 5.5%,
-							rgb(135, 206, 235) 11%,
-							rgb(170, 119, 238) 16.5%
-						);
-						
-						background-clip: text;
 					}
 				}
 				
