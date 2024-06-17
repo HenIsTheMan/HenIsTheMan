@@ -78,9 +78,11 @@
 						rgb(255, 182, 193)
 					);
 					background-clip: border-box;
-					background-size: 110% 110%; <!-- To hide hard edges at the corners -->
-					background-position: 25% 40%; <!-- To hide hard edges at the corners -->
-				
+                    
+                    <!-- To hide hard edges at the corners -->
+					background-size: 110% 110%;
+					background-position: 25% 40%; <!-- background-position only works here -->
+
 					border: 5px solid transparent;
 					border-radius: 20px;
 
@@ -153,35 +155,33 @@
 				
 					grid-column-start: 1;
 					grid-row-start: 1;
+                    
+                    color: transparent;
 				}
-				
-				#innerContainer div:nth-child(-n + 2) { <!-- 1st 2 #innerContainer div -->
-					background: repeating-linear-gradient(
-						-45deg,
-						rgb(255, 182, 193),
-						rgb(135, 206, 235) 5.5%,
-						rgb(170, 119, 238) 11%,
-						rgb(255, 182, 193) 16.5%
-					);
-					background-clip: text;
-					color: transparent;
-				}
-				
+
 				#innerContainer div:nth-child(n + 3) { <!-- 3rd #innerContainer div onwards -->
-					color: transparent;
-				
 					-webkit-text-stroke-width: 4px;
 					-webkit-text-stroke-color: #282828;
 				}
-				
-				#innerContainer div:nth-child(odd) {
+                
+                #innerContainer div:nth-child(1) {
 					animation:
+						txtStencilRigidGradientScrollAnim calc(0.99s + 0.89s) linear 0.7s infinite,
 						myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
 				}
 				
-				#innerContainer div:nth-child(even) {
+				#innerContainer div:nth-child(2) {
 					animation:
+						txtStencilRigidGradientScrollAnim calc(0.99s + 0.89s) linear 0.7s infinite,
 						myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
+				}
+                
+                #innerContainer div:nth-child(3) {
+					animation: myDistortionAnim0 9.99s 1.85s infinite alternate-reverse;
+				}
+				
+				#innerContainer div:nth-child(4) {
+					animation: myDistortionAnim1 9.99s 1.85s infinite alternate-reverse;
 				}
 
 				#leftPartOfVignette {
@@ -247,6 +247,43 @@
 					}
 					80% {
 						background-size: auto, auto 0.75%;
+					}
+				}
+				
+				@keyframes txtStencilRigidGradientScrollAnim {
+					0%,
+					100% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(255, 182, 193),
+							rgb(135, 206, 235) 5.5%,
+							rgb(170, 119, 238) 11%,
+							rgb(255, 182, 193) 16.5%
+						);
+						
+						background-clip: text;
+					}
+					33.3% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(135, 206, 235),
+							rgb(170, 119, 238) 5.5%,
+							rgb(255, 182, 193) 11%,
+							rgb(135, 206, 235) 16.5%
+						);
+						
+						background-clip: text;
+					}
+					66.7% {
+						background: repeating-linear-gradient(
+							-45deg,
+							rgb(170, 119, 238),
+							rgb(255, 182, 193) 5.5%,
+							rgb(135, 206, 235) 11%,
+							rgb(170, 119, 238) 16.5%
+						);
+						
+						background-clip: text;
 					}
 				}
 				
