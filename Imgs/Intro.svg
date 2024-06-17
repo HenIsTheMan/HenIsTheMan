@@ -192,6 +192,7 @@
 				#innerContainer div:nth-child(-n + 2) span { <!-- 1st 2 #innerContainer div and... -->
                 	--switch-interval: 0.425s;
 					--main-delay: calc(0.89s + 0.99s);
+                    --bgSize: 140px;
 
 					animation-name: txtStencilGradientSwitchAnim;
 					animation-iteration-count: infinite;
@@ -275,7 +276,7 @@
 						);
 						
 						background-clip: text;
-                        background-size: 400px 400px;
+                        background-size: var(--bgSize) var(--bgSize);
 					}
                     25% {
 						background: repeating-linear-gradient(
@@ -287,7 +288,7 @@
 						);
 						
 						background-clip: text;
-                        background-size: 400px 400px;
+                        background-size: var(--bgSize) var(--bgSize);
 					}
                     50% {
 						background: repeating-linear-gradient(
@@ -299,7 +300,7 @@
 						);
 						
 						background-clip: text;
-                        background-size: 400px 400px;
+                        background-size: var(--bgSize) var(--bgSize);
 					}
                     75% {
 						background: repeating-linear-gradient(
@@ -311,7 +312,7 @@
 						);
 						
 						background-clip: text;
-                        background-size: 400px 400px;
+                        background-size: var(--bgSize) var(--bgSize);
 					}
 				}
 
