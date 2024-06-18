@@ -127,7 +127,7 @@
 						);
 					
 					<!-- Part of Horiz Static Noise effect -->
-					animation-name: myBgSizeAnim;
+					animation-name: doubleBgSizeAnim;
 					animation-duration: 250ms;
 					animation-timing-function: ease;
 					animation-iteration-count: infinite;
@@ -190,14 +190,22 @@
 				}
 				
 				#innerContainer div:nth-child(-n + 2) span { <!-- 1st 2 #innerContainer div and... -->
-                	--switch-interval: 0.425s;
+					--switch-interval: 0.425s;
 					--main-delay: calc(0.89s + 0.99s);
-                    --bgSize: 140px;
+					
+					background: repeating-linear-gradient(
+						-45deg,
+						rgb(255, 182, 193),
+						rgb(135, 206, 235) 5.5%,
+						rgb(170, 119, 238) 11%,
+						rgb(255, 182, 193) 16.5%
+					);
+					background-clip: text;
 
-					animation-name: txtStencilGradientSwitchAnim;
+					animation-name: singleBgSizeAnim;
 					animation-iteration-count: infinite;
 					animation-duration: calc(var(--switch-interval) * 16);
-                    animation-fill-mode: backwards;
+					animation-fill-mode: backwards;
 				}
 				
 				#innerContainer div:nth-child(-n + 2) span:nth-child(1) {
@@ -264,60 +272,28 @@
 					}
 				}
 
-				@keyframes txtStencilGradientSwitchAnim {
+				@keyframes singleBgSizeAnim {
 					0%,
 					100% {
-						background: repeating-linear-gradient(
-							90deg,
-							rgb(255, 182, 193),
-							rgb(135, 206, 235) 5.5%,
-							rgb(170, 119, 238) 11%,
-							rgb(255, 182, 193) 16.5%
-						);
-						
-						background-clip: text;
-                        background-size: var(--bgSize) var(--bgSize);
+						--bgSize: 450px;
+						background-size: var(--bgSize) var(--bgSize);
 					}
-                    25% {
-						background: repeating-linear-gradient(
-							180deg,
-							rgb(255, 182, 193),
-							rgb(135, 206, 235) 5.5%,
-							rgb(170, 119, 238) 11%,
-							rgb(255, 182, 193) 16.5%
-						);
-						
-						background-clip: text;
-                        background-size: var(--bgSize) var(--bgSize);
+					25% {
+						--bgSize: 490px;
+						background-size: var(--bgSize) var(--bgSize);
 					}
-                    50% {
-						background: repeating-linear-gradient(
-							270deg,
-							rgb(255, 182, 193),
-							rgb(135, 206, 235) 5.5%,
-							rgb(170, 119, 238) 11%,
-							rgb(255, 182, 193) 16.5%
-						);
-						
-						background-clip: text;
-                        background-size: var(--bgSize) var(--bgSize);
+					50% {
+						--bgSize: 520px;
+						background-size: var(--bgSize) var(--bgSize);
 					}
-                    75% {
-						background: repeating-linear-gradient(
-							360deg,
-							rgb(255, 182, 193),
-							rgb(135, 206, 235) 5.5%,
-							rgb(170, 119, 238) 11%,
-							rgb(255, 182, 193) 16.5%
-						);
-						
-						background-clip: text;
-                        background-size: var(--bgSize) var(--bgSize);
+					75% {
+						--bgSize: 550px;
+						background-size: var(--bgSize) var(--bgSize);
 					}
 				}
 
 				<!-- 1st auto is for radial-gradient -->
-				@keyframes myBgSizeAnim {
+				@keyframes doubleBgSizeAnim {
 					0%,
 					100% {
 						background-size: auto, auto 1%;
