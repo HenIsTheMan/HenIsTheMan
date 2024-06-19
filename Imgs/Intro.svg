@@ -170,8 +170,10 @@
 					
 					color: transparent;
 					
-					animation-delay: 1.85s;
-					animation-duration: 9.99s;
+					--main-delay: calc(0.89s + 0.99s);
+					
+					animation-delay: var(--main-delay);
+					animation-duration: 5.99s;
 					animation-iteration-count: infinite;
 					animation-direction: alternate-reverse;
 				}
@@ -190,9 +192,6 @@
 				}
 				
 				#innerContainer div:nth-child(-n + 2) span { <!-- 1st 2 #innerContainer div and... -->
-					--switch-interval: 0.425s;
-					--main-delay: calc(0.89s + 0.99s);
-					
 					background: repeating-linear-gradient(
 						-45deg,
 						rgb(255, 182, 193),
@@ -201,6 +200,8 @@
 						rgb(255, 182, 193) 16.5%
 					);
 					background-clip: text;
+					
+					--switch-interval: 0.425s;
 
 					animation-name: singleBgSizeAnim;
 					animation-iteration-count: infinite;
@@ -309,80 +310,56 @@
 						background-size: auto, auto 0.75%;
 					}
 				}
-				
+
 				@keyframes myDistortionAnim0 {
 					0%,
-					9.5%,
-					10.5%,
-					19.5%,
-					20.5%,
-					34.5%,
-					35.5%,
-					69.5%,
-					70.5%,
-					79.5%,
-					80.5%,
+                    39.25%,
+					40.75%,
+					69.25%,
+					70.75%,
+					84.25%,
+					85.75%,
 					100% {
 						clip-path: none;
 						transform: none;
 					}
-					10% {
-						clip-path: polygon(0 0, 0 100%, 50% 100%, 25% 0);
-						transform: translate(-5%, 2.5%) skewY(-1.5deg);
-					}
-					20% {
-						clip-path: polygon(0 0, 0 100%, 50% 100%, 75% 0);
-						transform: translate(-1%, 7%) skew(4.5deg, 0.07rad);
-					}
-					35% {
-						clip-path: polygon(0 0, 100% 0, 0 100%);
-						transform: translate(0.5%, 0.5%) scale(1.1, 0.9) skewX(-0.2rad);
+                    40% {
+						clip-path: polygon(0 0, 0 100%, 65% 100%, 35% 0);
+						transform: translate(7%, 4.5%) skewY(-3.2deg);
 					}
 					70% {
 						clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
-						transform: translateX(-10%);
+						transform: translateX(-10%) scaleX(1.1) skewX(-0.17rad);
 					}
-					80% {
+					85% {
 						clip-path: polygon(0 0, 0 100%, 50% 100%, 50% 0%);
-						transform: translateY(-12%) scale(0.95);
+						transform: translateY(12.5%) scale(1.1);
 					}
 				}
 				
 				@keyframes myDistortionAnim1 {
 					0%,
-					9.5%,
-					10.5%,
-					19.5%,
-					20.5%,
-					34.5%,
-					35.5%,
-					69.5%,
-					70.5%,
-					79.5%,
-					80.5%,
+                    39.25%,
+					40.75%,
+					69.25%,
+					70.75%,
+					84.25%,
+					85.75%,
 					100% {
 						clip-path: none;
 						transform: none;
 					}
-					10% {
-						clip-path: polygon(100% 0, 100% 100%, 50% 100%, 25% 0);
-						transform: translate(5%, -2.5%) skewY(1.5deg);
-					}
-					20% {
-						clip-path: polygon(100% 0, 100% 100%, 50% 100%, 75% 0);
-						transform: translate(1%, -7%) skew(-4.5deg, 0.07rad);
-					}
-					35% {
-						clip-path: polygon(100% 100%, 100% 0, 0 100%);
-						transform: translate(-0.5%, -0.5%) scale(0.9, 1.1) skewX(-0.25rad);
+                    40% {
+						clip-path: polygon(100% 0, 100% 100%, 65% 100%, 35% 0);
+						transform: translate(-7.4%, -4.55%) skewY(2.8deg);
 					}
 					70% {
 						clip-path: polygon(0% 100%, 100% 100%, 100% 50%, 0% 50%);
-						transform: translateX(10%);
+						transform: translateX(12%) scaleX(0.97) skewX(0.2rad);
 					}
-					80% {
+					85% {
 						clip-path: polygon(100% 0, 100% 100%, 50% 100%, 50% 0%);
-						transform: translateY(12%) scale(1.05);
+						transform: translateY(-14.5%) scale(1.07);
 					}
 				}
 				
