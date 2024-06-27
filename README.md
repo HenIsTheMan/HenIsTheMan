@@ -6,7 +6,7 @@
 
 <h4>
 <details open>
-	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖</summary>
+	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖🕰️🏛️</summary>
 	<p></p>
 	<p align="center">
 		<code><kbd><a href="https://github.com/HenIsTheMan?tab=repositories"><img style="height: 5vmin;" src="Imgs/PastLogoImgs/GameMakerLogoImg.png"></a></kbd></code>
@@ -23,7 +23,7 @@
 	</p>
 </details>
 <details open>
-	<summary align="center">ℹ <strong>The Present</strong> 🥰🐤</summary>
+	<summary align="center">ℹ <strong>The Present</strong> 🎁💗💙💜🎁</summary>
 	<p></p>
 	<p align="center">
 		<code><kbd><a href="https://github.com/HenIsTheMan?tab=repositories"><img style="height: 5vmin;" src="Imgs/PresentLogoImgs/HtmlLogoImg.png"></a></kbd></code>
