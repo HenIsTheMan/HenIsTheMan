@@ -6,7 +6,7 @@
 
 <h4>
 <details open>
-	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖</summary>
+	<summary align="center">ℹ️ <strong>The Past</strong> 🦕🦖🕰️🏛️</summary>
 	<p></p>
 	<p align="center">
 		<code><kbd><a href="https://github.com/HenIsTheMan?tab=repositories"><img style="height: 5vmin;" src="Imgs/PastLogoImgs/GameMakerLogoImg.png"></a></kbd></code>
@@ -23,7 +23,7 @@
 	</p>
 </details>
 <details open>
-	<summary align="center">ℹ <strong>The Present</strong> 🥰🐤</summary>
+	<summary align="center">ℹ <strong>The Present</strong> 🎁💗💙💜🎁</summary>
 	<p></p>
 	<p align="center">
 		<code><kbd><a href="https://github.com/HenIsTheMan?tab=repositories"><img style="height: 5vmin;" src="Imgs/PresentLogoImgs/HtmlLogoImg.png"></a></kbd></code>
@@ -46,7 +46,7 @@
 
 <kbd><a href="https://github.com/HenIsTheMan?tab=stars"><img src="Imgs/AEJ.webp"></a></kbd>
 
-<h4 align="center"><kbd>$\LARGE\cal \color{lightpink}A \negthinspace\space \color{skyblue}E \color{#AA77EE}J$</kbd></h4>
+<h4 align="center"><kbd>$\LARGE\cal \color{lightpink}A \color{skyblue}E \color{#AA77EE}J$</kbd></h4>
 
 <p align="center"><samp>A contract is a contract is a contract</samp></p>
 

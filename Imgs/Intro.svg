@@ -596,7 +596,7 @@
 				}
 				
 				<!--
-				- Val Remapping: 1 + ($i - 1) * (270 - 1) / ($steps - 1)
+				- Val Remapping from range of 1 - 1000 to range of 0 - 269: ($i - 1) * (270 - 1) / ($steps - 1)
 				- Adjust 22.5deg to influence number of rays
 				- Test repeating-conic-gradient() separately to see the intended effect
 				
