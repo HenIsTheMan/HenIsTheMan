@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div id="container">
+				<span class="pinkBloomPurpleGlowText">HenIsTheMan, </span>
+				<span class="blueBloomPurpleGlowText">isn't he?</span>
+			</div>
+				
+			<style>
+				foreignObject, foreignObject > * {
+					width: 100%;
+					height: 100%;
+				}
+				
+				div:has(> #container) {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				
+				#container {
+					color: white;
+					font: 550 4.45rem "Georgia";
+					letter-spacing: 0.2rem;
+					text-align: center;
+				}
+				
+				#container .pinkBloomPurpleGlowText {
+					text-shadow:
+						1px 1px 4px rgb(255, 182, 193),
+						-1px -1px 4px rgb(255, 182, 193),
+						1px -1px 4px rgb(255, 182, 193),
+						-1px 1px 4px rgb(255, 182, 193),
+						0px 0px 5px #A7E,
+						0px 0px 6px #A7E,
+						0px 0px 7px #A7E,
+						0px 0px 8px #A7E,
+						0px 0px 9px #A7E,
+						0px 0px 10px #A7E,
+						0px 0px 11px #A7E,
+						0px 0px 12px #A7E,
+						0px 0px 13px #A7E,
+						0px 0px 14px #A7E,
+						0px 0px 20px #A7E,
+						0px 0px 21px #A7E,
+						0px 0px 22px #A7E;
+				}
+				
+				#container .blueBloomPurpleGlowText {
+					text-shadow:
+						1px 1px 4px rgb(135, 206, 235),
+						-1px -1px 4px rgb(135, 206, 235),
+						1px -1px 4px rgb(135, 206, 235),
+						-1px 1px 4px rgb(135, 206, 235),
+						0px 0px 5px #A7E,
+						0px 0px 6px #A7E,
+						0px 0px 7px #A7E,
+						0px 0px 8px #A7E,
+						0px 0px 9px #A7E,
+						0px 0px 10px #A7E,
+						0px 0px 11px #A7E,
+						0px 0px 12px #A7E,
+						0px 0px 13px #A7E,
+						0px 0px 14px #A7E,
+						0px 0px 20px #A7E,
+						0px 0px 21px #A7E,
+						0px 0px 22px #A7E;
+				}
+			</style>
+		</div>
+	</foreignObject>
+</svg>
